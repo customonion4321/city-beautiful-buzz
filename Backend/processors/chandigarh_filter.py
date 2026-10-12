@@ -1,9 +1,9 @@
 """
 Chandigarh Geographic Filter — City Beautiful Buzz
 ===================================================
-Strictly filters out regional/national noise (Ludhiana, Delhi, Himachal,
-Uttarakhand, Bihar, etc.) to ensure 100% of items are genuinely about
-Chandigarh and its immediate Tri-city area.
+STRICT HYPERLOCAL FILTER — 100% Chandigarh Only.
+Excludes Mohali, Panchkula, Zirakpur, Kharar, and all surrounding areas.
+Only accepts stories specifically anchored within the Union Territory of Chandigarh.
 """
 
 import re
@@ -11,23 +11,16 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# Exact word boundary keywords (avoids "electricity" matching "tricity"!)
+# ── 1. Positive Chandigarh Anchors ─────────────────────────────────────────────
+# MUST match at least one of these strictly Chandigarh-anchored patterns
 CHANDIGARH_PATTERNS = [
-    # City names
+    # City names & aliases
     r"\bchandigarh\b",
     r"\bcity beautiful\b",
-    r"\btricity\b",
-    r"\btri-city\b",
     r"चंडीगढ़",
     r"चंडीगढ़",
-    r"ट्राईसिटी",
-    r"ट्राइसिटी",
 
-    # Sector regex: Sector 1 to 99, Sec 17, सेक्टर 17, etc.
-    r"\b(?:sector|sec\.?)[-\s]*([0-9]{1,2}[a-z]?)\b",
-    r"सेक्टर[-\s]*([0-9]{1,2}[a-z]?)",
-
-    # Administration & Local Bodies
+    # Administration & Local Bodies (UT only)
     r"\bchandigarh administration\b",
     r"\but administration\b",
     r"यूटी प्रशासन",
@@ -39,14 +32,16 @@ CHANDIGARH_PATTERNS = [
     r"नगर निगम चंडीगढ़",
     r"\bchandigarh police\b",
     r"चंडीगढ़ पुलिस",
+    r"\bchd police\b",
     r"\bchandigarh transport\b",
     r"\bctu\b",
     r"चंडीगढ़ ट्रांसपोर्ट",
+    r"\bpunjab and haryana high court\b",
     r"\bhigh court\b",
     r"हाई कोर्ट",
     r"हाईकोर्ट",
 
-    # Institutions
+    # Chandigarh Educational & Medical Institutions
     r"\bpgi\b",
     r"\bpgimer\b",
     r"पीजीआई",
@@ -56,15 +51,19 @@ CHANDIGARH_PATTERNS = [
     r"\bgmsh\b",
     r"\bgmsh-16\b",
     r"\bpec\b",
+    r"\bpunjab engineering college\b",
+    r"\bccet\b",
     r"\bpanjab university\b",
     r"\bpu chandigarh\b",
     r"\bpu campus\b",
     r"पंजाब यूनिवर्सिटी",
     r"पीयू",
 
-    # Landmarks & Places
+    # Chandigarh Landmarks & Venues
     r"\bsukhna\b",
+    r"\bsukhna lake\b",
     r"सुखना",
+    r"सुखना लेक",
     r"\brock garden\b",
     r"रॉक गार्डन",
     r"\brose garden\b",
@@ -74,6 +73,7 @@ CHANDIGARH_PATTERNS = [
     r"लेजर वैली",
     r"लेज़र वैली",
     r"\belante\b",
+    r"\belante mall\b",
     r"एलांटे",
     r"एलांते",
     r"\bcapitol complex\b",
@@ -84,8 +84,11 @@ CHANDIGARH_PATTERNS = [
     r"टैगोर थिएटर",
     r"\bkala gram\b",
     r"कलाग्राम",
+    r"\bsector 17 plaza\b",
+    r"\bsec 17 plaza\b",
+    r"प्लाजा",
 
-    # Roads
+    # Major Arterial Roads in Chandigarh
     r"\bmadhya marg\b",
     r"मध्य मार्ग",
     r"\bdakshin marg\b",
@@ -94,11 +97,13 @@ CHANDIGARH_PATTERNS = [
     r"जन मार्ग",
     r"\bhimalaya marg\b",
     r"हिमालय मार्ग",
+    r"\bvikas marg\b",
+    r"विकास मार्ग",
     r"\bisbt 17\b",
     r"\bisbt 43\b",
     r"\bisbt\b",
 
-    # Villages & Local Areas
+    # Chandigarh UT Villages & Colonies (Strictly within UT boundary)
     r"\bhallomajra\b",
     r"हल्लोमाजरा",
     r"\bdadu majra\b",
@@ -134,23 +139,24 @@ CHANDIGARH_PATTERNS = [
     r"खुड्डा अली शेर",
     r"\bkishangarh\b",
     r"किशनगढ़",
-
-    # Immediate Tri-city
-    r"\bmohali\b",
-    r"मोहाली",
-    r"\bsas nagar\b",
-    r"\bpanchkula\b",
-    r"पंचकूला",
-    r"\bzirakpur\b",
-    r"जीरकपुर",
-    r"\bkharar\b",
-    r"खरड़",
 ]
 
 COMPILED_PATTERNS = [re.compile(p, re.IGNORECASE) for p in CHANDIGARH_PATTERNS]
 
-# ── 2. Negative Regional Prefixes (Distant cities) ─────────────────────────────
-EXCLUDED_LOCATION_PREFIXES = [
+# Regex for Sector numbers: "Sector 17", "Sec 22", "Sector-35", "सेक्टर 15"
+SECTOR_REGEX = re.compile(
+    r"(?i)\b(?:Sector|Sec\.?|सेक्टर)[-\s]*([0-9]{1,3}[A-Za-z]?)\b"
+)
+
+# ── 2. Negative Exclusions (Mohali, Panchkula, Tricity & Distant Cities) ────────
+# Stories primarily about these locations MUST be discarded
+EXCLUDED_PREFIXES = [
+    # Tricity neighbors — EXCLUDED per user requirement
+    r"^mohali\b", r"^panchkula\b", r"^zirakpur\b", r"^kharar\b",
+    r"^new chandigarh\b", r"^mullanpur\b", r"^derabassi\b", r"^kalka\b", r"^pinjore\b",
+    r"^मोहाली\b", r"^पंचकूला\b", r"^जीरकपुर\b", r"^खरड़\b", r"^मुल्लांपुर\b",
+
+    # Regional cities
     r"^ludhiana\b", r"^amritsar\b", r"^jalandhar\b", r"^ferozepur\b",
     r"^bathinda\b", r"^hoshiarpur\b", r"^tarn taran\b", r"^patiala\b",
     r"^gurdaspur\b", r"^pathankot\b", r"^moga\b", r"^kapurthala\b",
@@ -167,54 +173,70 @@ EXCLUDED_LOCATION_PREFIXES = [
     r"^दिल्ली\b", r"^कानपुर\b", r"^लखनऊ\b", r"^बद्रीनाथ\b", r"^देहरादून\b",
 ]
 
-PREFIX_REGEX = re.compile("|".join(EXCLUDED_LOCATION_PREFIXES), re.IGNORECASE)
+PREFIX_REGEX = re.compile("|".join(EXCLUDED_PREFIXES), re.IGNORECASE)
 
-# National / Non-Chandigarh Distractions (Immediate Disqualifiers)
-NATIONAL_DISTRACTIONS = [
-    "delhi cops enter bangla sahib",
-    "himachal cabinet meeting",
-    "badrinath donation",
-    "delhi to kanpur",
-    "bhagalpur police",
-    "shahi imam targets dhirendra shastri",
-    "kashmiri saffron and walnuts",
-    "amritsar airport",
-    "tarn taran",
-    "monkey sterilisation",
-    "unsung jewish soldiers",
-    "farmers golden harvest floated in punjab",
-    "satauj rewired itself",
-    "frequently mentioned achievements like daytime electricity",
-    "daytime electricity and canal water for farmers",
+# Keywords that indicate Mohali/Panchkula-only stories
+NON_CHANDIGARH_KEYWORDS = [
+    r"\bmohali mc\b",
+    r"\bmunicipal corporation mohali\b",
+    r"\bgmada\b",
+    r"\bhuda\b",
+    r"\bharyana shahar vikas pradhikaran\b",
+    r"\bpanchkula mc\b",
+    r"\bsector 89\b", # Mohali sector (Chandigarh sectors only go up to 63)
 ]
+
+COMPILED_NON_CHD = [re.compile(p, re.IGNORECASE) for p in NON_CHANDIGARH_KEYWORDS]
 
 
 def is_chandigarh_relevant(item: dict) -> bool:
     """
-    Returns True ONLY if the story is genuinely located in or directly
-    pertains to Chandigarh or the immediate Tri-city area.
+    Returns True ONLY if the story is strictly and hyperlocally about
+    the Union Territory of Chandigarh.
     """
     title = (item.get("title") or "").strip()
     summary = (item.get("summary") or "").strip()
     combined = f"{title} {summary}".lower()
 
-    # Disqualification 1: Immediate national phrases
-    for dist in NATIONAL_DISTRACTIONS:
-        if dist in combined:
-            return False
-
-    # Disqualification 2: Starts with another city prefix without Chandigarh mention
+    # Rule 1: Starts with an excluded city/neighbor prefix
     cleaned_title = re.sub(r"^[^\w]+", "", title)
     if PREFIX_REGEX.search(cleaned_title):
+        # Even if prefix matched, only allow if Chandigarh is explicitly mentioned in title
         if "chandigarh" not in title.lower() and "चंडीगढ़" not in title:
             return False
 
-    # Qualification: Match at least one compiled word-boundary pattern
+    # Rule 2: Pure Mohali / Panchkula / Zirakpur / Kharar headline check
+    neighbor_pattern = r"\b(mohali|panchkula|zirakpur|kharar|मोहाली|पंचकूला|जीरकपुर|खरड़)\b"
+    if re.search(neighbor_pattern, title, re.IGNORECASE):
+        # If the headline mentions Mohali/Panchkula and DOES NOT mention Chandigarh, REJECT!
+        if not re.search(r"\b(chandigarh|chd|चंडीगढ़|चंडीगढ़)\b", title, re.IGNORECASE):
+            return False
+
+    # Rule 3: Check for Mohali-specific sector numbers (> Sector 63)
+    sector_match = SECTOR_REGEX.search(title) or SECTOR_REGEX.search(summary)
+    if sector_match:
+        try:
+            sec_num = int(re.sub(r"[^\d]", "", sector_match.group(1)))
+            # Chandigarh Sectors only go up to 63. Sectors 64+ are in Mohali or Panchkula!
+            if sec_num > 63:
+                # If sector > 63 and doesn't mention Chandigarh UT explicitly, discard
+                if "chandigarh" not in combined and "चंडीगढ़" not in combined:
+                    return False
+        except (ValueError, IndexError):
+            pass
+
+    # Rule 4: Explicit non-Chandigarh local bodies (GMADA, Mohali MC, etc.)
+    for non_chd in COMPILED_NON_CHD:
+        if non_chd.search(combined):
+            if "chandigarh" not in combined and "चंडीगढ़" not in combined:
+                return False
+
+    # Rule 5: Positive Match — must hit at least one compiled Chandigarh pattern
     for pattern in COMPILED_PATTERNS:
         if pattern.search(title) or pattern.search(summary):
             return True
 
-    # Qualification: Events on AllEvents Chandigarh
+    # Rule 6: AllEvents explicitly in Chandigarh
     if item.get("source_id") == "allevents":
         return True
 
@@ -223,7 +245,7 @@ def is_chandigarh_relevant(item: dict) -> bool:
 
 def filter_chandigarh_only(items: list[dict]) -> list[dict]:
     """
-    Filters a list of items to retain ONLY verified Chandigarh/Tricity items.
+    Filters a list of items to retain ONLY verified, hyperlocal Chandigarh items.
     """
     accepted = []
     rejected_count = 0
@@ -233,7 +255,7 @@ def filter_chandigarh_only(items: list[dict]) -> list[dict]:
             accepted.append(item)
         else:
             rejected_count += 1
-            logger.debug(f"Filtered out non-Chandigarh story: {item.get('title')}")
+            logger.debug(f"Filtered out: {item.get('title')}")
 
-    logger.info(f"📍 Chandigarh Filter: Retained {len(accepted)} items | Rejected {rejected_count} non-Chandigarh items.")
+    logger.info(f"📍 Hyperlocal Chandigarh Filter: Retained {len(accepted)} items | Rejected {rejected_count} non-Chandigarh items.")
     return accepted

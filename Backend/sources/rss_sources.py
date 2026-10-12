@@ -1,18 +1,18 @@
 """
 RSS Sources — City Beautiful Buzz
-Fetches structured news from RSS feeds of major Chandigarh news outlets.
+Fetches structured news from RSS feeds of major Chandigarh news outlets,
+supplemented by Google News Realtime Chandigarh indexing.
 """
 
 import feedparser
 import logging
 import ssl
 import certifi
+import re
 from datetime import datetime, timezone
 from dateutil import parser as date_parser
 
 # ── macOS SSL fix ─────────────────────────────────────────────────────────────
-# Python 3 on macOS doesn't use system root certs by default.
-# Patch the default SSL context to use certifi's trusted CA bundle.
 ssl._create_default_https_context = lambda: ssl.create_default_context(
     cafile=certifi.where()
 )
@@ -20,9 +20,27 @@ ssl._create_default_https_context = lambda: ssl.create_default_context(
 logger = logging.getLogger(__name__)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Registered RSS Feeds — Chandigarh / Tricity
+# Registered RSS Feeds — Hyperlocal Chandigarh
 # ─────────────────────────────────────────────────────────────────────────────
 RSS_FEEDS = [
+    {
+        "source_id": "google_news_chd_en",
+        "name": "Chandigarh News Wire",
+        "logo": "tribune.png",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+when:7d&hl=en-IN&gl=IN&ceid=IN:en",
+        "language": "en",
+        "tier": 1,
+        "is_aggregator": True,
+    },
+    {
+        "source_id": "google_news_chd_hi",
+        "name": "चंडीगढ़ समाचार",
+        "logo": "amarujala.png",
+        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+when:7d&hl=hi&gl=IN&ceid=IN:hi",
+        "language": "hi",
+        "tier": 1,
+        "is_aggregator": True,
+    },
     {
         "source_id": "hindustan_times",
         "name": "Hindustan Times",
@@ -30,6 +48,7 @@ RSS_FEEDS = [
         "url": "https://www.hindustantimes.com/feeds/rss/cities/chandigarh-news/rssfeed.xml",
         "language": "en",
         "tier": 1,
+        "is_aggregator": False,
     },
     {
         "source_id": "indian_express",
@@ -38,38 +57,7 @@ RSS_FEEDS = [
         "url": "https://indianexpress.com/section/cities/chandigarh/feed/",
         "language": "en",
         "tier": 1,
-    },
-    {
-        "source_id": "ndtv_chandigarh",
-        "name": "NDTV Chandigarh",
-        "logo": "ndtv.png",
-        "url": "https://feeds.feedburner.com/ndtvnews-city-chandigarh",
-        "language": "en",
-        "tier": 1,
-    },
-    {
-        "source_id": "tribune_india",
-        "name": "The Tribune",
-        "logo": "tribune.png",
-        "url": "https://www.tribuneindia.com/rss/feed?id=11",  # Chandigarh section
-        "language": "en",
-        "tier": 1,
-    },
-    {
-        "source_id": "jagran_chandigarh",
-        "name": "Dainik Jagran",
-        "logo": "jagran.png",
-        "url": "https://www.jagran.com/rss/news-city-chandigarh.xml",
-        "language": "hi",
-        "tier": 2,
-    },
-    {
-        "source_id": "punjab_kesari",
-        "name": "Punjab Kesari",
-        "logo": "punjabkesari.png",
-        "url": "https://www.punjabkesari.in/rss/chandigarh-news.xml",
-        "language": "hi",
-        "tier": 2,
+        "is_aggregator": False,
     },
     {
         "source_id": "amar_ujala",
@@ -78,6 +66,7 @@ RSS_FEEDS = [
         "url": "https://www.amarujala.com/rss/chandigarh.xml",
         "language": "hi",
         "tier": 2,
+        "is_aggregator": False,
     },
 ]
 
@@ -99,17 +88,17 @@ def _parse_date(entry) -> str:
 
 
 def _clean_html(text: str) -> str:
-    """Strip basic HTML tags from summary text."""
-    import re
+    """Strip basic HTML tags and unescape entities."""
     clean = re.sub(r"<[^>]+>", "", text or "")
+    clean = re.sub(r"&nbsp;|&amp;|&quot;|&#39;", " ", clean)
     clean = re.sub(r"\s+", " ", clean).strip()
-    return clean[:500]  # cap at 500 chars for widget display
+    return clean[:500]
 
 
 def fetch_all_rss() -> list[dict]:
     """
-    Fetch and parse all configured RSS feeds.
-    Returns a list of normalized news item dicts.
+    Fetch and parse all configured RSS feeds without artificial truncation.
+    Returns a comprehensive list of raw news item dicts.
     """
     items = []
 
@@ -120,7 +109,7 @@ def fetch_all_rss() -> list[dict]:
 
         try:
             feed = feedparser.parse(url, request_headers={
-                "User-Agent": "CityBeautifulBuzz/1.0 (personal news aggregator; +https://github.com/customonion4321/city-beautiful-buzz)",
+                "User-Agent": "CityBeautifulBuzz/2.0 (Chandigarh Hyperlocal News Aggregator; +https://github.com/customonion4321/city-beautiful-buzz)",
                 "Accept": "application/rss+xml, application/xml, text/xml",
             })
 
@@ -130,23 +119,36 @@ def fetch_all_rss() -> list[dict]:
 
             logger.info(f"  ✅  Got {len(feed.entries)} entries from {source_id}")
 
-            for entry in feed.entries[:15]:  # max 15 per source
-                title = _clean_html(getattr(entry, "title", ""))
+            # Process up to 100 entries per source for extensive coverage
+            for entry in feed.entries[:100]:
+                raw_title = _clean_html(getattr(entry, "title", ""))
                 summary = _clean_html(
                     getattr(entry, "summary", "")
                     or getattr(entry, "description", "")
                 )
                 link = getattr(entry, "link", "")
 
-                if not title or not link:
+                if not raw_title or not link:
                     continue
+
+                # Handle Google News title formatting (e.g., "Headline - Source Name")
+                source_name = feed_config["name"]
+                title = raw_title
+                if feed_config.get("is_aggregator"):
+                    source_obj = getattr(entry, "source", None)
+                    if source_obj and getattr(source_obj, "title", None):
+                        source_name = getattr(source_obj, "title")
+                    elif " - " in raw_title:
+                        parts = raw_title.rsplit(" - ", 1)
+                        title = parts[0].strip()
+                        source_name = parts[1].strip()
 
                 items.append({
                     "title": title,
                     "summary": summary,
                     "article_url": link,
                     "source_id": source_id,
-                    "source_name": feed_config["name"],
+                    "source_name": source_name,
                     "source_logo": feed_config["logo"],
                     "language": feed_config["language"],
                     "tier": feed_config["tier"],

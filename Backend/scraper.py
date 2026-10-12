@@ -30,7 +30,7 @@ from processors.normalizer import normalize_all
 
 # ── Constants ──────────────────────────────────────────────────────────────────
 OUTPUT_PATH = Path(__file__).parent / "data" / "news.json"
-MAX_ITEMS = 60          # max items in final feed
+MAX_ITEMS = 120         # max items in final feed (extensive coverage)
 LOG_LEVEL = logging.INFO
 
 # ── Logging setup ─────────────────────────────────────────────────────────────

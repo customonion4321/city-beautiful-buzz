@@ -2,7 +2,7 @@
 //  SectorExtractor.swift
 //  CityBeautifulBuzz
 //
-//  Extracts Chandigarh sector numbers and iconic landmark tags
+//  Extracts Chandigarh sector numbers (1–63) and iconic landmark tags
 //  from news titles and summaries for the architectural card badges.
 //
 
@@ -15,8 +15,8 @@ public struct SectorExtractor {
         // 1. Regex check for Sector numbers (English & Hindi)
         // Matches: "Sector 17", "Sec 22", "Sector-35", "Sec. 43", "सेक्टर 17"
         let sectorPatterns = [
-            #"(?i)\b(?:Sector|Sec\.?)[-\s]*([0-9]{1,2}[A-Za-z]?)\b"#,
-            #"(?i)सेक्टर[-\s]*([0-9]{1,2}[A-Za-z]?)"#
+            #"(?i)\b(?:Sector|Sec\.?)[-\s]*([0-9]{1,3}[A-Za-z]?)\b"#,
+            #"(?i)सेक्टर[-\s]*([0-9]{1,3}[A-Za-z]?)"#
         ]
 
         for pattern in sectorPatterns {
@@ -25,13 +25,16 @@ public struct SectorExtractor {
                 if let match = regex.firstMatch(in: combined, options: [], range: range),
                    match.numberOfRanges > 1,
                    let sectorRange = Range(match.range(at: 1), in: combined) {
-                    let secNumber = String(combined[sectorRange]).uppercased()
-                    return "SEC \(secNumber)"
+                    let rawSec = String(combined[sectorRange]).uppercased()
+                    let numericPart = rawSec.filter { $0.isNumber }
+                    if let num = Int(numericPart), num <= 63 {
+                        return "SEC \(rawSec)"
+                    }
                 }
             }
         }
 
-        // 2. Check for iconic Chandigarh landmarks & hubs
+        // 2. Check for iconic Chandigarh landmarks & institutions (UT only)
         let landmarkMap: [(keywords: [String], tag: String)] = [
             (["sukhna", "सुखना"], "SUKHNA"),
             (["panjab university", "pu ", "पीयू"], "PU CAMPUS"),
@@ -43,11 +46,16 @@ public struct SectorExtractor {
             (["madhya marg", "मध्य मार्ग"], "MADHYA MARG"),
             (["dakshin marg", "दक्षिण मार्ग"], "DAKSHIN MARG"),
             (["it park", "आईटी पार्क"], "IT PARK"),
-            (["mohali", "मोहाली"], "MOHALI"),
-            (["panchkula", "पंचकूला"], "PANCHKULA"),
             (["high court", "हाई कोर्ट"], "HIGH COURT"),
             (["secretariat", "सचिवालय"], "CAPITOL"),
             (["gmc", "gmch", "जीएमसीएच"], "GMCH-32"),
+            (["hallomajra", "हल्लोमाजरा"], "HALLOMAJRA"),
+            (["dadu majra", "डड्डूमाजरा"], "DADDUMAJRA"),
+            (["manimajra", "मणिमाजरा"], "MANIMAJRA"),
+            (["maloya", "मलोया"], "MALOYA"),
+            (["dhanas", "धनास"], "DHANAS"),
+            (["burail", "बुड़ैल"], "BURAIL"),
+            (["sarangpur", "सारंगपुर"], "SARANGPUR"),
             (["railway", "station", "स्टेशन"], "CHD JUNCTION")
         ]
 
@@ -60,7 +68,7 @@ public struct SectorExtractor {
             }
         }
 
-        // 3. Fallback to Tri-City identifier
-        return "TRI-CITY"
+        // 3. Hyperlocal Chandigarh fallback
+        return "CHANDIGARH"
     }
 }
