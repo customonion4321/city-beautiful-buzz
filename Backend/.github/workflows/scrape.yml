@@ -1,0 +1,54 @@
+name: City Beautiful Buzz — News Scraper
+
+on:
+  schedule:
+    # Run every 15 minutes (GitHub Actions minimum is 5 min, we use 15 for reliability)
+    - cron: '*/15 * * * *'
+  workflow_dispatch:  # Allow manual trigger from GitHub UI anytime
+
+permissions:
+  contents: write   # needed to commit updated news.json back to the repo
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # ── 1. Checkout repository ────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1  # shallow clone for speed
+
+      # ── 2. Set up Python ──────────────────────────────────────────────────
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: 'Backend/requirements.txt'
+
+      # ── 3. Install dependencies ───────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install -r Backend/requirements.txt
+
+      # ── 4. Run scraper ────────────────────────────────────────────────────
+      - name: Run scraper
+        run: python3 Backend/scraper.py
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      # ── 5. Commit & push updated news.json ───────────────────────────────
+      - name: Commit and push news.json
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name  "GitHub Actions Bot"
+          git add Backend/data/news.json
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to news.json — skipping commit."
+          else
+            git commit -m "chore: update news.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git push
+          fi

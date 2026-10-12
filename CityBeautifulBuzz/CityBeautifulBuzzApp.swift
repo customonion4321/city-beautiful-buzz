@@ -2,7 +2,7 @@
 //  CityBeautifulBuzzApp.swift
 //  CityBeautifulBuzz
 //
-//  Created by SHIVAM  on 12/10/26.
+//  Application entry point for macOS.
 //
 
 import SwiftUI
@@ -13,5 +13,8 @@ struct CityBeautifulBuzzApp: App {
         WindowGroup {
             ContentView()
         }
+        .windowStyle(.titleBar)
+        .windowToolbarStyle(.unified)
+        .defaultSize(width: 960, height: 680)
     }
 }
