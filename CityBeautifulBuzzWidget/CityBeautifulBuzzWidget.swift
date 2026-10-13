@@ -8,6 +8,7 @@
 
 import WidgetKit
 import SwiftUI
+import AppIntents
 
 // ── Widget Quadrant Card ───────────────────────────────────────────────────────
 public struct WidgetQuadrantCard: View {
@@ -86,45 +87,95 @@ public struct CityBuzzWidgetEntry: TimelineEntry {
     public let language: AppLanguage
 }
 
-// ── Timeline Provider ─────────────────────────────────────────────────────────
-public struct CityBuzzTimelineProvider: TimelineProvider {
+// ── AppIntent Sector Filter Configuration ─────────────────────────────────────
+public enum SectorFilterOption: String, AppEnum {
+    case all = "ALL"
+    case sec17 = "SEC 17"
+    case sec22 = "SEC 22"
+    case sec26 = "SEC 26"
+    case sec35 = "SEC 35"
+    case pgimer = "PGIMER"
+    case police = "CHD POLICE"
+    case alerts = "ALERTS"
+
+    public static var typeDisplayRepresentation: TypeDisplayRepresentation = "Sector Focus"
+    public static var caseDisplayRepresentations: [SectorFilterOption: DisplayRepresentation] = [
+        .all: "All Chandigarh Sectors",
+        .sec17: "Sector 17 (City Centre)",
+        .sec22: "Sector 22 (Commercial)",
+        .sec26: "Sector 26 (Mandi Hub)",
+        .sec35: "Sector 35 (Commercial Hub)",
+        .pgimer: "PGIMER (Medical Wire)",
+        .police: "Chandigarh Police Wire",
+        .alerts: "Civic Alerts (Water/Power/Road)"
+    ]
+}
+
+public struct ConfigurationAppIntent: WidgetConfigurationIntent {
+    public static var title: LocalizedStringResource = "Sector Focus"
+    public static var description = IntentDescription("Prioritize stories from a specific Chandigarh sector or civic alert channel.")
+
+    @Parameter(title: "Sector Focus", default: .all)
+    public var sector: SectorFilterOption
+
+    public init() {}
+    public init(sector: SectorFilterOption) {
+        self.sector = sector
+    }
+}
+
+// ── AppIntent Timeline Provider ───────────────────────────────────────────────
+public struct CityBuzzAppIntentTimelineProvider: AppIntentTimelineProvider {
+    public typealias Entry = CityBuzzWidgetEntry
+    public typealias Intent = ConfigurationAppIntent
+
     private let feedURL = URL(string: "https://customonion4321.github.io/city-beautiful-buzz/Backend/data/news.json")!
 
     public func placeholder(in context: Context) -> CityBuzzWidgetEntry {
         CityBuzzWidgetEntry(date: Date(), items: loadInitialItems(), language: .english)
     }
 
-    public func getSnapshot(in context: Context, completion: @escaping (CityBuzzWidgetEntry) -> Void) {
-        completion(CityBuzzWidgetEntry(date: Date(), items: loadInitialItems(), language: .english))
+    public func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> CityBuzzWidgetEntry {
+        let items = filter(items: loadInitialItems(), by: configuration.sector)
+        return CityBuzzWidgetEntry(date: Date(), items: items, language: .english)
     }
 
-    public func getTimeline(in context: Context, completion: @escaping (Timeline<CityBuzzWidgetEntry>) -> Void) {
-        Task {
-            var fetchedItems = loadInitialItems()
+    public func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<CityBuzzWidgetEntry> {
+        var fetchedItems = loadInitialItems()
 
-            do {
-                var request = URLRequest(url: feedURL)
-                request.timeoutInterval = 10
-                let (data, response) = try await URLSession.shared.data(for: request)
-                if let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) {
-                    let feed = try JSONDecoder().decode(NewsFeedResponse.self, from: data)
-                    if !feed.items.isEmpty {
-                        fetchedItems = feed.items
-                    }
+        do {
+            var request = URLRequest(url: feedURL)
+            request.timeoutInterval = 10
+            let (data, response) = try await URLSession.shared.data(for: request)
+            if let http = response as? HTTPURLResponse, (200...299).contains(http.statusCode) {
+                let feed = try JSONDecoder().decode(NewsFeedResponse.self, from: data)
+                if !feed.items.isEmpty {
+                    fetchedItems = feed.items
                 }
-            } catch {
-                // If network is offline, keep bundled items
-                print("⚠️ [Widget] Using bundled news.json: \(error.localizedDescription)")
             }
-
-            let entry = CityBuzzWidgetEntry(date: Date(), items: fetchedItems, language: .english)
-            let nextRefresh = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date().addingTimeInterval(900)
-            let timeline = Timeline(entries: [entry], policy: .after(nextRefresh))
-            completion(timeline)
+        } catch {
+            print("⚠️ [Widget] Using bundled news.json: \(error.localizedDescription)")
         }
+
+        let filtered = filter(items: fetchedItems, by: configuration.sector)
+        let entry = CityBuzzWidgetEntry(date: Date(), items: filtered, language: .english)
+        let nextRefresh = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date().addingTimeInterval(900)
+        return Timeline(entries: [entry], policy: .after(nextRefresh))
     }
 
-    /// Load bundled news.json directly so widget displays real news immediately
+    private func filter(items: [NewsItem], by sector: SectorFilterOption) -> [NewsItem] {
+        if sector == .all { return items }
+        if sector == .alerts {
+            let matches = items.filter { $0.categoryId == "alerts" || $0.importance == "high" }
+            let rest = items.filter { !matches.contains($0) }
+            return matches + rest
+        }
+        let tag = sector.rawValue.lowercased()
+        let matches = items.filter { $0.sectorTag.lowercased().contains(tag) || $0.title.lowercased().contains(tag) }
+        let rest = items.filter { !matches.contains($0) }
+        return matches + rest
+    }
+
     private func loadInitialItems() -> [NewsItem] {
         if let url = Bundle.main.url(forResource: "news", withExtension: "json"),
            let data = try? Data(contentsOf: url),
@@ -265,12 +316,12 @@ public struct CityBeautifulBuzzWidget: Widget {
     public init() {}
 
     public var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: CityBuzzTimelineProvider()) { entry in
+        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: CityBuzzAppIntentTimelineProvider()) { entry in
             CityBeautifulBuzzWidgetEntryView(entry: entry)
                 .containerBackground(CorbusierTheme.betonSand, for: .widget)
         }
         .configurationDisplayName("City Beautiful Buzz")
-        .description("Chandigarh's 4-item live news and civic event grid.")
+        .description("Chandigarh's 4-item live news and civic event grid. Long-press or right-click to edit sector focus.")
         .supportedFamilies([.systemMedium, .systemLarge, .systemSmall])
     }
 }
