@@ -49,6 +49,13 @@
 			);
 			target = E01D5654307D05CB0072EFB9 /* CityBeautifulBuzzWidgetExtension */;
 		};
+		E0418BEB307CFBE90048376F /* Exceptions for "CityBeautifulBuzz" folder in "CityBeautifulBuzz" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E0418BE7307CFBE90048376F /* CityBeautifulBuzz */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -62,6 +69,9 @@
 		};
 		E0418BEA307CFBE90048376F /* CityBeautifulBuzz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E0418BEB307CFBE90048376F /* Exceptions for "CityBeautifulBuzz" folder in "CityBeautifulBuzz" target */,
+			);
 			path = CityBeautifulBuzz;
 			sourceTree = "<group>";
 		};
@@ -428,6 +438,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityBeautifulBuzz/Info.plist;
+				INFOPLIST_KEY_CFBundleIconFile = AppIcon;
+				INFOPLIST_KEY_CFBundleIconName = AppIcon;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -461,6 +474,9 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityBeautifulBuzz/Info.plist;
+				INFOPLIST_KEY_CFBundleIconFile = AppIcon;
+				INFOPLIST_KEY_CFBundleIconName = AppIcon;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

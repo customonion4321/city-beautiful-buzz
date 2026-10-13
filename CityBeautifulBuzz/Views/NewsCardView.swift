@@ -79,7 +79,7 @@ public struct NewsCardView: View {
                             Circle()
                                 .fill(Color.white)
                                 .frame(width: 6, height: 6)
-                            Text(language == .english ? "IMPORTANT" : "ज़रूरी")
+                            Text("IMPORTANT")
                                 .font(.system(size: 9, weight: .black, design: .monospaced))
                                 .foregroundColor(.white)
                         }

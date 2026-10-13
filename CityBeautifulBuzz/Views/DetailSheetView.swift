@@ -99,7 +99,7 @@ public struct DetailSheetView: View {
                         if let url = URL(string: item.source.articleUrl), !item.source.articleUrl.isEmpty {
                             Button(action: { openURL(url) }) {
                                 HStack(spacing: 6) {
-                                    Text(language == .english ? "Read Full Coverage" : "पूरी खबर पढ़ें")
+                                    Text("Read Full Coverage")
                                         .font(.system(size: 14, weight: .bold, design: .rounded))
                                     Image(systemName: "arrow.up.right")
                                         .font(.system(size: 12, weight: .bold))
@@ -114,7 +114,7 @@ public struct DetailSheetView: View {
                         }
 
                         Button(action: onDismiss) {
-                            Text(language == .english ? "Close" : "बंद करें")
+                            Text("Close")
                                 .font(.system(size: 14, weight: .semibold, design: .rounded))
                                 .padding(.horizontal, 18)
                                 .padding(.vertical, 10)

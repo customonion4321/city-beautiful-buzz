@@ -67,7 +67,7 @@ public struct ContentView: View {
                             Text("City Beautiful Buzz")
                                 .font(.system(size: 18, weight: .black, design: .rounded))
                                 .foregroundColor(.primary)
-                            Text(language == .english ? "CHANDIGARH • CIVIC WIRE" : "चंडीगढ़ • ताज़ा हलचल")
+                            Text("CHANDIGARH • CIVIC WIRE")
                                 .font(.system(size: 9, weight: .bold, design: .monospaced))
                                 .foregroundColor(.secondary)
                         }
@@ -79,7 +79,7 @@ public struct ContentView: View {
                     HStack(spacing: 6) {
                         Image(systemName: "magnifyingglass")
                             .foregroundColor(.secondary)
-                        TextField(language == .english ? "Search sectors, news..." : "सेक्टर या खबर खोजें...", text: $searchText)
+                        TextField("Search sectors, news...", text: $searchText)
                             .textFieldStyle(.plain)
                             .font(.system(size: 13))
                     }
@@ -140,7 +140,7 @@ public struct ContentView: View {
                                 HStack(spacing: 6) {
                                     Image(systemName: cat.icon)
                                         .font(.system(size: 11))
-                                    Text(language == .english ? cat.en : cat.hi)
+                                    Text(cat.en)
                                         .font(.system(size: 12, weight: .bold, design: .rounded))
                                 }
                                 .padding(.horizontal, 12)
@@ -165,7 +165,7 @@ public struct ContentView: View {
                         Spacer()
                         ProgressView()
                             .scaleEffect(1.3)
-                        Text(language == .english ? "Fetching Chandigarh Civic Wire..." : "चंडीगढ़ की ताज़ा खबरें लोड हो रही हैं...")
+                        Text("Fetching Chandigarh Civic Wire...")
                             .font(.system(size: 14, weight: .semibold, design: .rounded))
                             .foregroundColor(.secondary)
                         Spacer()
@@ -176,7 +176,7 @@ public struct ContentView: View {
                         Spacer()
                         Text("✋")
                             .font(.system(size: 44))
-                        Text(language == .english ? "No Updates Found" : "कोई खबर नहीं मिली")
+                        Text("No Updates Found")
                             .font(.system(size: 18, weight: .bold, design: .rounded))
                             .foregroundColor(.primary)
 
@@ -185,7 +185,7 @@ public struct ContentView: View {
                                 searchText = ""
                                 selectedCategory = "all"
                             }) {
-                                Text(language == .english ? "Reset Filters" : "फ़िल्टर हटाएं")
+                                Text("Reset Filters")
                                     .font(.system(size: 13, weight: .semibold, design: .rounded))
                                     .padding(.horizontal, 16)
                                     .padding(.vertical, 8)
@@ -198,7 +198,7 @@ public struct ContentView: View {
                             Button(action: {
                                 Task { await service.fetchFeed() }
                             }) {
-                                Text(language == .english ? "Retry Fetch" : "दोबारा प्रयास करें")
+                                Text("Retry Fetch")
                                     .font(.system(size: 13, weight: .semibold, design: .rounded))
                                     .padding(.horizontal, 16)
                                     .padding(.vertical, 8)
@@ -240,6 +240,7 @@ public struct ContentView: View {
             }
         }
         .frame(minWidth: 840, idealWidth: 980, minHeight: 600, idealHeight: 700)
+        .navigationTitle("City Beautiful Buzz")
         .task {
             if service.items.isEmpty {
                 await service.fetchFeed()

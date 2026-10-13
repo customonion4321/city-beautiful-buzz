@@ -47,7 +47,7 @@ public struct MenuBarView: View {
                     Text("City Beautiful Buzz")
                         .font(.system(size: 13, weight: .black, design: .rounded))
                         .foregroundColor(.primary)
-                    Text(language == .english ? "CHANDIGARH • 24H WIRE" : "चंडीगढ़ • 24 घंटे वायर")
+                    Text("CHANDIGARH • 24H WIRE")
                         .font(.system(size: 8, weight: .bold, design: .monospaced))
                         .foregroundColor(.secondary)
                 }
@@ -180,7 +180,7 @@ public struct MenuBarView: View {
                     HStack(spacing: 4) {
                         Image(systemName: "macwindow")
                             .font(.system(size: 10))
-                        Text(language == .english ? "Open Dashboard" : "डैशबोर्ड खोलें")
+                        Text("Open Dashboard")
                             .font(.system(size: 10, weight: .semibold, design: .rounded))
                     }
                     .padding(.horizontal, 8)
@@ -195,7 +195,7 @@ public struct MenuBarView: View {
                 Button(action: {
                     NSApplication.shared.terminate(nil)
                 }) {
-                    Text(language == .english ? "Quit" : "बंद करें")
+                    Text("Quit")
                         .font(.system(size: 10, weight: .medium, design: .rounded))
                         .foregroundColor(.secondary)
                 }
