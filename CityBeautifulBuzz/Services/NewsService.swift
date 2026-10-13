@@ -21,9 +21,27 @@ public final class NewsService: ObservableObject {
 
     private let liveFeedURL = URL(string: "https://customonion4321.github.io/city-beautiful-buzz/Backend/data/news.json")!
     private let cacheKey = "chd_cached_feed_v1"
+    private var pollingTask: Task<Void, Never>?
 
     public init() {
         loadInitialFeed()
+        startBackgroundPolling()
+    }
+
+    /// Autonomously poll the live feed on startup and every 15 minutes
+    public func startBackgroundPolling() {
+        pollingTask?.cancel()
+        pollingTask = Task { [weak self] in
+            // Immediate live fetch on startup
+            await self?.fetchFeed()
+
+            // Continuous 15-minute cycle
+            while !Task.isCancelled {
+                try? await Task.sleep(nanoseconds: 15 * 60 * 1_000_000_000)
+                if Task.isCancelled { break }
+                await self?.fetchFeed()
+            }
+        }
     }
 
     /// Load from cache or bundled news.json so items are immediately visible

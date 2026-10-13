@@ -242,9 +242,7 @@ public struct ContentView: View {
         .frame(minWidth: 840, idealWidth: 980, minHeight: 600, idealHeight: 700)
         .navigationTitle("City Beautiful Buzz")
         .task {
-            if service.items.isEmpty {
-                await service.fetchFeed()
-            }
+            await service.fetchFeed()
         }
         .sheet(isPresented: $isShowingDeck) {
             StoryDeckView(
