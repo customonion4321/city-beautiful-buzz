@@ -8,6 +8,7 @@
 
 import Foundation
 import Combine
+import WidgetKit
 
 @MainActor
 public final class NewsService: ObservableObject {
@@ -58,6 +59,10 @@ public final class NewsService: ObservableObject {
             // Persist to local cache for offline/widget use
             UserDefaults.standard.set(data, forKey: cacheKey)
             print("✅ [NewsService] Successfully fetched and cached \(feed.items.count) live items from GitHub Pages.")
+
+            // Check for new civic alerts and reload desktop widget timelines
+            NotificationService.shared.checkAndNotify(for: feed.items)
+            WidgetCenter.shared.reloadAllTimelines()
         } catch {
             print("⚠️ [NewsService] Network fetch error: \(error.localizedDescription). Falling back to cached/bundled data.")
             self.errorMessage = error.localizedDescription
