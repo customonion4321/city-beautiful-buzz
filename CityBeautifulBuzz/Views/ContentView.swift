@@ -87,32 +87,6 @@ public struct ContentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                     .frame(maxWidth: 240)
 
-                    // English / Hindi Toggle Button
-                    HStack(spacing: 2) {
-                        ForEach(AppLanguage.allCases) { lang in
-                            Button(action: {
-                                withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) {
-                                    language = lang
-                                }
-                            }) {
-                                HStack(spacing: 4) {
-                                    Text(lang.flagIcon)
-                                    Text(lang.shortLabel)
-                                        .font(.system(size: 12, weight: .bold, design: .rounded))
-                                }
-                                .padding(.horizontal, 10)
-                                .padding(.vertical, 5)
-                                .background(language == lang ? Color.accentColor : Color.clear)
-                                .foregroundColor(language == lang ? .white : .primary)
-                                .clipShape(Capsule())
-                            }
-                            .buttonStyle(.plain)
-                        }
-                    }
-                    .padding(3)
-                    .background(Color.primary.opacity(0.07))
-                    .clipShape(Capsule())
-
                     // Refresh Button
                     Button(action: {
                         Task { await service.fetchFeed() }
@@ -248,7 +222,7 @@ public struct ContentView: View {
             }
         }
         .onOpenURL { url in
-            guard url.scheme == "cbb" else { return }
+            guard url.scheme == "citybuzz" else { return }
             let articleId = url.lastPathComponent
             if let match = service.items.first(where: { $0.id == articleId }) {
                 selectedItem = match

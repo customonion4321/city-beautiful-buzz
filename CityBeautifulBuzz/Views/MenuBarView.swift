@@ -54,20 +54,6 @@ public struct MenuBarView: View {
 
                 Spacer()
 
-                // Language toggle
-                Button(action: {
-                    withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) {
-                        language = (language == .english) ? .hindi : .english
-                    }
-                }) {
-                    Text(language.flagIcon)
-                        .font(.system(size: 12))
-                        .padding(4)
-                        .background(Color.primary.opacity(0.08))
-                        .clipShape(Circle())
-                }
-                .buttonStyle(.plain)
-
                 // Refresh button
                 Button(action: {
                     Task { await service.fetchFeed() }
@@ -129,7 +115,7 @@ public struct MenuBarView: View {
                     VStack(spacing: 8) {
                         ForEach(displayItems) { item in
                             Button(action: {
-                                if let url = URL(string: "cbb://news/\(item.id)") {
+                                if let url = URL(string: "citybuzz://news/\(item.id)") {
                                     NSWorkspace.shared.open(url)
                                 }
                             }) {

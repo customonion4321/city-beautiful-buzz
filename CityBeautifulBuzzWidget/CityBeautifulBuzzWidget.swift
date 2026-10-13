@@ -24,7 +24,7 @@ public struct WidgetQuadrantCard: View {
     }
 
     public var body: some View {
-        Link(destination: URL(string: "cbb://news/\(item.id)") ?? URL(string: item.source.articleUrl)!) {
+        Link(destination: URL(string: "citybuzz://news/\(item.id)") ?? URL(string: item.source.articleUrl)!) {
             VStack(alignment: .leading, spacing: 4) {
                 // Top metadata line
                 HStack(spacing: 4) {
@@ -80,25 +80,25 @@ public struct WidgetQuadrantCard: View {
 }
 
 // ── Timeline Entry ────────────────────────────────────────────────────────────
-public struct CBBWidgetEntry: TimelineEntry {
+public struct CityBuzzWidgetEntry: TimelineEntry {
     public let date: Date
     public let items: [NewsItem]
     public let language: AppLanguage
 }
 
 // ── Timeline Provider ─────────────────────────────────────────────────────────
-public struct CBBTimelineProvider: TimelineProvider {
+public struct CityBuzzTimelineProvider: TimelineProvider {
     private let feedURL = URL(string: "https://customonion4321.github.io/city-beautiful-buzz/Backend/data/news.json")!
 
-    public func placeholder(in context: Context) -> CBBWidgetEntry {
-        CBBWidgetEntry(date: Date(), items: loadInitialItems(), language: .english)
+    public func placeholder(in context: Context) -> CityBuzzWidgetEntry {
+        CityBuzzWidgetEntry(date: Date(), items: loadInitialItems(), language: .english)
     }
 
-    public func getSnapshot(in context: Context, completion: @escaping (CBBWidgetEntry) -> Void) {
-        completion(CBBWidgetEntry(date: Date(), items: loadInitialItems(), language: .english))
+    public func getSnapshot(in context: Context, completion: @escaping (CityBuzzWidgetEntry) -> Void) {
+        completion(CityBuzzWidgetEntry(date: Date(), items: loadInitialItems(), language: .english))
     }
 
-    public func getTimeline(in context: Context, completion: @escaping (Timeline<CBBWidgetEntry>) -> Void) {
+    public func getTimeline(in context: Context, completion: @escaping (Timeline<CityBuzzWidgetEntry>) -> Void) {
         Task {
             var fetchedItems = loadInitialItems()
 
@@ -117,7 +117,7 @@ public struct CBBTimelineProvider: TimelineProvider {
                 print("⚠️ [Widget] Using bundled news.json: \(error.localizedDescription)")
             }
 
-            let entry = CBBWidgetEntry(date: Date(), items: fetchedItems, language: .english)
+            let entry = CityBuzzWidgetEntry(date: Date(), items: fetchedItems, language: .english)
             let nextRefresh = Calendar.current.date(byAdding: .minute, value: 15, to: Date()) ?? Date().addingTimeInterval(900)
             let timeline = Timeline(entries: [entry], policy: .after(nextRefresh))
             completion(timeline)
@@ -187,7 +187,7 @@ public struct CBBTimelineProvider: TimelineProvider {
 // ── Widget Entry View ─────────────────────────────────────────────────────────
 public struct CityBeautifulBuzzWidgetEntryView : View {
     @Environment(\.widgetFamily) var family
-    public let entry: CBBWidgetEntry
+    public let entry: CityBuzzWidgetEntry
 
     public var body: some View {
         switch family {
@@ -265,7 +265,7 @@ public struct CityBeautifulBuzzWidget: Widget {
     public init() {}
 
     public var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: CBBTimelineProvider()) { entry in
+        StaticConfiguration(kind: kind, provider: CityBuzzTimelineProvider()) { entry in
             CityBeautifulBuzzWidgetEntryView(entry: entry)
                 .containerBackground(CorbusierTheme.betonSand, for: .widget)
         }

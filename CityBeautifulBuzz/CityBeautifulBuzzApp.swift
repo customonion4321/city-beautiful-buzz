@@ -24,11 +24,7 @@ struct CityBeautifulBuzzApp: App {
         MenuBarExtra {
             MenuBarView()
         } label: {
-            HStack(spacing: 3) {
-                Image(systemName: "hand.raised.fill")
-                Text("CBB")
-                    .font(.system(size: 10, weight: .black, design: .monospaced))
-            }
+            Image(systemName: "hand.raised.fill")
         }
         .menuBarExtraStyle(.window)
     }

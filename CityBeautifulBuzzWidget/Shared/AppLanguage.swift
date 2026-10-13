@@ -2,7 +2,7 @@
 //  AppLanguage.swift
 //  CityBeautifulBuzz
 //
-//  Manages English ⇄ Hindi bilingual toggle state.
+//  Manages English & Hindi localization support.
 //
 
 import SwiftUI

@@ -49,7 +49,7 @@ DEFAULT_COLOR = "#555555"
 def _generate_id(item: dict) -> str:
     """Generate a stable, unique ID for a news item."""
     raw = (item.get("_raw_id", "") or item.get("article_url", "")).encode()
-    return "cbb-" + hashlib.md5(raw).hexdigest()[:10]
+    return "chd-" + hashlib.md5(raw).hexdigest()[:10]
 
 
 def _importance(item: dict) -> str:
@@ -75,7 +75,7 @@ def _sanitize_text(text: str) -> str:
 
 def normalize(item: dict) -> dict:
     """
-    Convert a raw scraper item into the canonical CBB news item format.
+    Convert a raw scraper item into the canonical news item format.
     """
     source_id = item.get("source_id", "unknown")
 

@@ -20,7 +20,7 @@ public final class NewsService: ObservableObject {
     @Published public var errorMessage: String? = nil
 
     private let liveFeedURL = URL(string: "https://customonion4321.github.io/city-beautiful-buzz/Backend/data/news.json")!
-    private let cacheKey = "cbb_cached_feed_v1"
+    private let cacheKey = "chd_cached_feed_v1"
 
     public init() {
         loadInitialFeed()

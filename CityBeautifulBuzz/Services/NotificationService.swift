@@ -14,7 +14,7 @@ import AppKit
 public final class NotificationService: NSObject, UNUserNotificationCenterDelegate {
     public static let shared = NotificationService()
 
-    private let notifiedKeysKey = "cbb_notified_item_ids_v1"
+    private let notifiedKeysKey = "chd_notified_item_ids_v1"
 
     private override init() {
         super.init()
@@ -83,7 +83,7 @@ public final class NotificationService: NSObject, UNUserNotificationCenterDelega
         withCompletionHandler completionHandler: @escaping () -> Void
     ) {
         if let articleId = response.notification.request.content.userInfo["article_id"] as? String,
-           let url = URL(string: "cbb://news/\(articleId)") {
+           let url = URL(string: "citybuzz://news/\(articleId)") {
             DispatchQueue.main.async {
                 NSWorkspace.shared.open(url)
             }
