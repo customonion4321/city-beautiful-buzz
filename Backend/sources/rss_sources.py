@@ -1,7 +1,7 @@
 """
 RSS Sources — City Beautiful Buzz
 Fetches structured news from targeted hyperlocal Chandigarh RSS feeds,
-supplemented by specialized Google News Realtime Chandigarh civic & sector queries.
+constrained strictly to the last 24 hours (when:1d).
 """
 
 import feedparser
@@ -31,25 +31,35 @@ HEADERS = {
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Hyperlocal Chandigarh Feeds: Sector, Civic Body & Department Specific
+# Hyperlocal Chandigarh Feeds: Strictly Last 24 Hours (when:1d)
 # ─────────────────────────────────────────────────────────────────────────────
 RSS_FEEDS = [
-    # ── 1. Sector-Specific Deep Wire ──────────────────────────────────────────
+    # ── 1. City Realtime Wire (Past 24h) ─────────────────────────────────────
     {
-        "source_id": "google_news_chd_sectors",
-        "name": "Chandigarh Sector Wire",
+        "source_id": "google_news_chd_wire",
+        "name": "Chandigarh 24h Wire",
         "logo": "tribune.png",
-        "url": "https://news.google.com/rss/search?q=Chandigarh+Sector&hl=en-IN&gl=IN&ceid=IN:en",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
         "language": "en",
         "tier": 1,
         "is_aggregator": True,
     },
-    # ── 2. Municipal Corporation & Civic Administration ───────────────────────
+    # ── 2. Sector-Specific Deep Wire (Past 24h) ──────────────────────────────
+    {
+        "source_id": "google_news_chd_sectors",
+        "name": "Chandigarh Sector Wire",
+        "logo": "tribune.png",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+Sector+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "language": "en",
+        "tier": 1,
+        "is_aggregator": True,
+    },
+    # ── 3. Municipal Corporation & Civic Administration (Past 24h) ───────────
     {
         "source_id": "google_news_chd_mc",
         "name": "MC Chandigarh Bulletin",
         "logo": "tribune.png",
-        "url": "https://news.google.com/rss/search?q=Chandigarh+Municipal+Corporation&hl=en-IN&gl=IN&ceid=IN:en",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+Municipal+Corporation+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
         "language": "en",
         "tier": 1,
         "is_aggregator": True,
@@ -58,36 +68,63 @@ RSS_FEEDS = [
         "source_id": "google_news_chd_admin",
         "name": "UT Administration Wire",
         "logo": "ht.png",
-        "url": "https://news.google.com/rss/search?q=Chandigarh+Administration&hl=en-IN&gl=IN&ceid=IN:en",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+Administration+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
         "language": "en",
         "tier": 1,
         "is_aggregator": True,
     },
-    # ── 3. Traffic Police & Civic Advisories ───────────────────────────────────
+    # ── 4. Traffic Police, Police Cases & Civic Alerts (Past 24h) ────────────
+    {
+        "source_id": "google_news_chd_police",
+        "name": "Chandigarh Police Wire",
+        "logo": "ie.png",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+Police+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "language": "en",
+        "tier": 1,
+        "is_aggregator": True,
+    },
     {
         "source_id": "google_news_chd_traffic",
         "name": "Chandigarh Traffic & Civic",
         "logo": "ie.png",
-        "url": "https://news.google.com/rss/search?q=Chandigarh+traffic+advisory&hl=en-IN&gl=IN&ceid=IN:en",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+traffic+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
         "language": "en",
         "tier": 1,
         "is_aggregator": True,
     },
-    # ── 4. Hindi Sector & Municipal News ──────────────────────────────────────
+    {
+        "source_id": "google_news_chd_civic",
+        "name": "Chandigarh Civic Alerts",
+        "logo": "ht.png",
+        "url": "https://news.google.com/rss/search?q=Chandigarh+water+OR+electricity+OR+road+when:1d&hl=en-IN&gl=IN&ceid=IN:en",
+        "language": "en",
+        "tier": 1,
+        "is_aggregator": True,
+    },
+    # ── 5. Hindi Feeds (Past 24h) ─────────────────────────────────────────────
+    {
+        "source_id": "google_news_chd_hi_wire",
+        "name": "चंडीगढ़ 24 घंटे समाचार",
+        "logo": "amarujala.png",
+        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+when:1d&hl=hi&gl=IN&ceid=IN:hi",
+        "language": "hi",
+        "tier": 1,
+        "is_aggregator": True,
+    },
     {
         "source_id": "google_news_chd_hi_sectors",
         "name": "चंडीगढ़ सेक्टर डायरी",
         "logo": "amarujala.png",
-        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+%E0%A4%B8%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%9F%E0%A4%B0&hl=hi&gl=IN&ceid=IN:hi",
+        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+%E0%A4%B8%E0%A5%87%E0%A4%95%E0%A5%8D%E0%A4%9F%E0%A4%B0+when:1d&hl=hi&gl=IN&ceid=IN:hi",
         "language": "hi",
         "tier": 1,
         "is_aggregator": True,
     },
     {
         "source_id": "google_news_chd_hi_mc",
-        "name": "चंडीगढ़ नगर निगम समाचार",
+        "name": "चंडीगढ़ नगर निगम",
         "logo": "amarujala.png",
-        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+%E0%A4%A8%E0%A4%97%E0%A4%B0+%E0%A4%A8%E0%A4%BF%E0%A4%97%E0%A4%AE&hl=hi&gl=IN&ceid=IN:hi",
+        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+%E0%A4%A8%E0%A4%97%E0%A4%B0+%E0%A4%A8%E0%A4%BF%E0%A4%97%E0%A4%AE+when:1d&hl=hi&gl=IN&ceid=IN:hi",
         "language": "hi",
         "tier": 1,
         "is_aggregator": True,
@@ -96,12 +133,12 @@ RSS_FEEDS = [
         "source_id": "google_news_chd_hi_admin",
         "name": "चंडीगढ़ प्रशासन अपडेट",
         "logo": "amarujala.png",
-        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A4%A8&hl=hi&gl=IN&ceid=IN:hi",
+        "url": "https://news.google.com/rss/search?q=%E0%A4%9A%E0%A4%82%E0%A4%A1%E0%A5%80%E0%A4%97%E0%A4%A2%E0%A4%BC+%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A4%BE%E0%A4%B8%E0%A4%A8+when:1d&hl=hi&gl=IN&ceid=IN:hi",
         "language": "hi",
         "tier": 1,
         "is_aggregator": True,
     },
-    # ── 5. Mainstream News Outlets Chandigarh Bureaus ────────────────────────
+    # ── 6. Outlets Regional City RSS Feeds ───────────────────────────────────
     {
         "source_id": "hindustan_times",
         "name": "Hindustan Times",
@@ -132,22 +169,22 @@ RSS_FEEDS = [
 ]
 
 
-def _parse_date(entry) -> str:
-    """Try multiple date fields and return ISO 8601 string in UTC."""
+def _parse_date(entry) -> str | None:
+    """Try multiple date fields and return ISO 8601 string in UTC, or None if unparseable."""
     raw = (
         getattr(entry, "published", None)
         or getattr(entry, "updated", None)
         or getattr(entry, "created", None)
     )
     if not raw:
-        return datetime.now(timezone.utc).isoformat()
+        return None
     try:
         dt = date_parser.parse(raw)
         if dt.tzinfo is None:
             dt = dt.replace(tzinfo=timezone.utc)
         return dt.isoformat()
     except Exception:
-        return datetime.now(timezone.utc).isoformat()
+        return None
 
 
 def _clean_html(text: str) -> str:
@@ -161,16 +198,17 @@ def _clean_html(text: str) -> str:
 def fetch_all_rss() -> list[dict]:
     """
     Fetch and parse all configured RSS feeds using requests with custom headers.
-    Returns a comprehensive list of raw news item dicts.
+    Restricts entries to those published within the last 24 hours.
     """
     items = []
     session = requests.Session()
     session.headers.update(HEADERS)
+    now = datetime.now(timezone.utc)
 
     for feed_config in RSS_FEEDS:
         source_id = feed_config["source_id"]
         url = feed_config["url"]
-        logger.info(f"Fetching RSS: {feed_config['name']} → {url}")
+        logger.info(f"Fetching RSS (24h): {feed_config['name']} → {url}")
 
         try:
             resp = session.get(url, timeout=12)
@@ -184,9 +222,7 @@ def fetch_all_rss() -> list[dict]:
                 logger.warning(f"  ⚠️  Feed parse error for {source_id}: {feed.bozo_exception}")
                 continue
 
-            logger.info(f"  ✅  Got {len(feed.entries)} entries from {source_id}")
-
-            # Process up to 100 entries per source for extensive coverage
+            feed_count = 0
             for entry in feed.entries[:100]:
                 raw_title = _clean_html(getattr(entry, "title", ""))
                 summary = _clean_html(
@@ -198,7 +234,20 @@ def fetch_all_rss() -> list[dict]:
                 if not raw_title or not link:
                     continue
 
-                # Handle Google News title formatting (e.g., "Headline - Source Name")
+                pub_iso = _parse_date(entry)
+                if not pub_iso:
+                    continue
+
+                # Strict 24-hour verification on entry level
+                try:
+                    dt = date_parser.parse(pub_iso)
+                    age_hours = (now - dt).total_seconds() / 3600.0
+                    if age_hours < -0.25 or age_hours > 24.0:
+                        continue
+                except Exception:
+                    continue
+
+                # Handle Google News title formatting ("Headline - Source Name")
                 source_name = feed_config["name"]
                 title = raw_title
                 if feed_config.get("is_aggregator"):
@@ -219,9 +268,12 @@ def fetch_all_rss() -> list[dict]:
                     "source_logo": feed_config["logo"],
                     "language": feed_config["language"],
                     "tier": feed_config["tier"],
-                    "published_at": _parse_date(entry),
+                    "published_at": pub_iso,
                     "_raw_id": getattr(entry, "id", link),
                 })
+                feed_count += 1
+
+            logger.info(f"  ✅  Retained {feed_count} entries within 24h from {source_id}")
 
         except Exception as e:
             logger.error(f"  ❌  Failed to fetch {source_id}: {e}")

@@ -3,18 +3,24 @@ Chandigarh Geographic Filter & Hyperlocal Scoring — City Beautiful Buzz
 ========================================================================
 STRICT HYPERLOCAL FILTER — 100% Chandigarh Only.
 Eliminates:
-- Mohali, Panchkula, Zirakpur, Kharar, and all surrounding Punjab/Haryana bleeds.
+- Mohali, Panchkula, Zirakpur, Kharar, and all Tricity neighbors.
+- Other cities with sector numbering systems (Rohtak, Karnal, Gurugram, Ambala, Noida, etc.).
 - "Chandigarh University" (CU Gharuan in Mohali district).
-- Away sports matches (e.g. Ranji Trophy away games against Mumbai).
-- Distant Punjab/Haryana state politics merely datelined in Chandigarh.
+- Away sports matches (e.g. Ranji Trophy away games in Mumbai).
+- Articles older than 24 hours.
 
 Calculates an authoritative `hyperlocal_score` and extracts `sector_tag`.
 """
 
 import re
 import logging
+from datetime import datetime, timezone
+from dateutil import parser as date_parser
 
 logger = logging.getLogger(__name__)
+
+# Maximum age permitted (strict 24 hours)
+MAX_AGE_HOURS = 24.0
 
 # ── 1. Positive Chandigarh Anchors ─────────────────────────────────────────────
 CHANDIGARH_PATTERNS = [
@@ -41,6 +47,8 @@ CHANDIGARH_PATTERNS = [
     r"\bctu\b",
     r"चंडीगढ़ ट्रांसपोर्ट",
     r"\bpunjab and haryana high court\b",
+    r"प्रशासक कटारिया",
+    r"\bgulab chand kataria\b",
 
     # Chandigarh Educational & Medical Institutions
     r"\bpgi\b",
@@ -70,6 +78,7 @@ CHANDIGARH_PATTERNS = [
     r"रोज गार्डन",
     r"\bleisure valley\b",
     r"लेजर वैली",
+    r"लेज़र वैली",
     r"\belante\b",
     r"\belante mall\b",
     r"एलांटे",
@@ -140,32 +149,19 @@ SECTOR_REGEX = re.compile(
     r"(?i)\b(?:Sector|Sec\.?|सेक्टर)[-\s]*([0-9]{1,3}[A-Za-z]?)\b"
 )
 
-# ── 2. Strict Negative Exclusions ──────────────────────────────────────────────
-EXCLUDED_PATTERNS = [
-    # Private institution in Mohali district often confused with Chandigarh UT
-    r"\bchandigarh university\b",
-    r"\bcu gharuan\b",
-    r"\bgharuan\b",
-
-    # Domestic away-sports matches
-    r"\branji trophy\b",
-    r"\branji\b",
-    r"\bdeshpande\b",
-    r"\bhat-trick\b",
-
-    # Peripheral cities and Tricity neighbors
-    r"\bmohali\b", r"\bpanchkula\b", r"\bzirakpur\b", r"\bkharar\b",
-    r"\bnew chandigarh\b", r"\bmullanpur\b", r"\bderabassi\b", r"\bkalka\b", r"\bpinjore\b",
-    r"मोहाली", r"पंचकूला", r"जीरकपुर", r"खरड़", r"मुल्लांपुर",
-
-    # Distant Punjab/Haryana towns
-    r"\bludhiana\b", r"\bamritsar\b", r"\bjalandhar\b", r"\bbathinda\b", r"\bpatiala\b",
-    r"\brohtak\b", r"\bhisar\b", r"\bkarnal\b", r"\bpanipat\b", r"\bgurugram\b",
-    r"\bfaridabad\b", r"\bambala\b", r"\bkurukshetra\b", r"\bshimla\b", r"\bsolan\b",
-    r"लुधियाना", r"अमृतसर", r"जालंधर", r"बठिंडा", r"पटियाला", r"रोहतक", r"हिसार",
+# ── 2. Other Cities to Exclude ─────────────────────────────────────────────────
+# Other cities in Haryana/Punjab that have their own Sectors
+OTHER_CITIES = [
+    r"\bpanchkula\b", r"\bmohali\b", r"\bzirakpur\b", r"\bkharar\b",
+    r"\brohtak\b", r"\bkarnal\b", r"\bgurugram\b", r"\bhisar\b",
+    r"\bpanipat\b", r"\bambala\b", r"\bludhiana\b", r"\bamritsar\b",
+    r"\bjalandhar\b", r"\bpatiala\b", r"\bdelhi\b", r"\bnoida\b",
+    r"\bshimla\b", r"\bsonipat\b", r"\bfaridabad\b", r"\bkurukshetra\b",
+    r"रोहतक", r"करनाल", r"पंचकूला", r"मोहाली", r"जीरकपुर", r"खरड़",
+    r"लुधियाना", r"गुरुग्राम", r"अंबाला", r"हिसार", r"पानीपत", r"सोनीपत",
 ]
 
-COMPILED_EXCLUDED = [re.compile(p, re.IGNORECASE) for p in EXCLUDED_PATTERNS]
+COMPILED_OTHER = [re.compile(p, re.IGNORECASE) for p in OTHER_CITIES]
 
 # Specific Mohali/Panchkula agencies
 NON_CHANDIGARH_KEYWORDS = [
@@ -255,7 +251,7 @@ def calculate_hyperlocal_score(item: dict) -> int:
     # 2. Civic Local Bodies (+30 points)
     if any(k in text for k in ["municipal corporation", "mc chandigarh", "nagar nigam", "नगर निगम"]):
         score += 30
-    if any(k in text for k in ["chandigarh administration", "ut administration", "ut adviser", "administrator", "यूटी प्रशासन"]):
+    if any(k in text for k in ["chandigarh administration", "ut administration", "ut adviser", "administrator", "यूटी प्रशासन", "कटारिया"]):
         score += 30
     if any(k in text for k in ["chandigarh police", "traffic police", "traffic advisory", "चंडीगढ़ पुलिस"]):
         score += 25
@@ -264,7 +260,7 @@ def calculate_hyperlocal_score(item: dict) -> int:
     disruptions = [
         "water supply", "power cut", "electricity cut", "pipeline", "road repair",
         "re-carpeting", "encroachment", "demolition", "challan", "property tax",
-        "fog alert", "rain alert", "legacy waste", "dadumajra", "daddumajra"
+        "fog alert", "rain alert", "legacy waste", "dadumajra", "daddumajra", "mandi"
     ]
     for d in disruptions:
         if d in text:
@@ -289,49 +285,61 @@ def calculate_hyperlocal_score(item: dict) -> int:
             score -= 25
             break
 
-    # 6. Penalty if neighbor mentioned
-    if any(n in text for n in ["mohali", "panchkula", "zirakpur"]):
-        score -= 15
-
     return score
 
 
 def is_chandigarh_relevant(item: dict) -> bool:
     """
     Returns True ONLY if the story is strictly and hyperlocally about
-    the Union Territory of Chandigarh.
+    the Union Territory of Chandigarh and published within the last 24 hours.
     """
     title = (item.get("title") or "").strip()
     summary = (item.get("summary") or "").strip()
     combined = f"{title} {summary}"
 
-    # Reject 1: Explicit exclusion of CU Gharuan
+    # Strict 24-hour verification
+    pub_str = item.get("published_at")
+    if pub_str:
+        try:
+            now = datetime.now(timezone.utc)
+            dt = date_parser.parse(pub_str)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            age_hours = (now - dt).total_seconds() / 3600.0
+            if age_hours < -0.25 or age_hours > MAX_AGE_HOURS:
+                return False
+        except Exception:
+            return False
+
+    # Reject 1: Explicit exclusion of other cities in title (Rohtak, Karnal, Panchkula, Mohali, etc.)
+    for other_p in COMPILED_OTHER:
+        if other_p.search(title):
+            # If the headline mentions an external city and does not explicitly anchor Chandigarh in the title, reject!
+            if not re.search(r"\b(chandigarh|chd|चंडीगढ़|चंडीगढ़)\b", title, re.IGNORECASE):
+                return False
+
+    # Reject 2: Explicit exclusion of CU Gharuan
     if re.search(r"\b(chandigarh university|cu gharuan|gharuan)\b", combined, re.IGNORECASE):
         return False
 
-    # Reject 2: Ranji Trophy / away cricket match noise
-    if re.search(r"\b(ranji trophy|ranji|deshpande hat-trick)\b", combined, re.IGNORECASE):
+    # Reject 3: Ranji Trophy / away cricket match noise (English + Hindi)
+    if re.search(r"(?i)\b(ranji trophy|ranji|deshpande hat-trick|innings and 155 runs)\b|रणजी ट्रॉफी|रणजी", combined):
         return False
 
-    # Reject 3: Explicit Mohali / Panchkula bodies
+    # Reject 4: Multi-metro corporate retail / national tour announcements (e.g. Delhi, Mumbai, Chandigarh)
+    if re.search(r"\b(delhi|mumbai|bengaluru|kolkata)\b", title, re.IGNORECASE) and re.search(r"\b(eyewear|retail debut|concert tour|all india)\b", combined, re.IGNORECASE):
+        return False
+
+    # Reject 4: Explicit Mohali / Panchkula bodies
     for non_chd in COMPILED_NON_CHD:
         if non_chd.search(combined):
             if "chandigarh" not in combined.lower() and "चंडीगढ़" not in combined:
                 return False
 
-    # Reject 4: Headline starts with or is predominantly about Mohali/Panchkula/other cities
-    headline_reject = r"^(mohali|panchkula|zirakpur|kharar|ludhiana|amritsar|jalandhar|shimla|मोहाली|पंचकूला|जीरकपुर)[\s\:\-]"
-    if re.search(headline_reject, title, re.IGNORECASE):
-        if "chandigarh" not in title.lower() and "चंडीगढ़" not in title:
-            return False
-
-    # Positive Match: Must hit at least one compiled Chandigarh pattern or have a Sector
+    # Positive Match: Must hit at least one compiled Chandigarh pattern
     for pattern in COMPILED_PATTERNS:
         if pattern.search(combined):
             return True
-
-    if SECTOR_REGEX.search(combined):
-        return True
 
     return False
 
@@ -346,7 +354,6 @@ def filter_chandigarh_only(items: list[dict]) -> list[dict]:
 
     for item in items:
         if is_chandigarh_relevant(item):
-            # Calculate sector tag and civic score
             item["sector_tag"] = extract_sector_tag(item.get("title", ""), item.get("summary", ""))
             item["hyperlocal_score"] = calculate_hyperlocal_score(item)
             accepted.append(item)
