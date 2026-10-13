@@ -13,6 +13,8 @@ public struct ContentView: View {
     @State private var selectedCategory: String = "all"
     @State private var searchText: String = ""
     @State private var selectedItem: NewsItem? = nil
+    @State private var isShowingDeck: Bool = false
+    @State private var deckIndex: Int = 0
 
     @Environment(\.colorScheme) private var colorScheme
 
@@ -86,6 +88,26 @@ public struct ContentView: View {
                     .background(Color.primary.opacity(0.06))
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                     .frame(maxWidth: 240)
+
+                    // Story Deck Mode Button
+                    Button(action: {
+                        deckIndex = 0
+                        isShowingDeck = true
+                    }) {
+                        HStack(spacing: 5) {
+                            Image(systemName: "rectangle.stack.fill")
+                                .font(.system(size: 11))
+                            Text("Story Deck")
+                                .font(.system(size: 12, weight: .bold, design: .rounded))
+                        }
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 6)
+                        .background(CorbusierTheme.terracotta)
+                        .foregroundColor(.white)
+                        .clipShape(Capsule())
+                    }
+                    .buttonStyle(.plain)
+                    .help("Open interactive card deck to flip through stories")
 
                     // Refresh Button
                     Button(action: {
@@ -201,7 +223,14 @@ public struct ContentView: View {
                                 NewsCardView(
                                     item: item,
                                     language: language,
-                                    onSelect: { selectedItem = item }
+                                    onSelect: {
+                                        if let idx = filteredItems.firstIndex(where: { $0.id == item.id }) {
+                                            deckIndex = idx
+                                        } else {
+                                            deckIndex = 0
+                                        }
+                                        isShowingDeck = true
+                                    }
                                 )
                             }
                         }
@@ -216,6 +245,13 @@ public struct ContentView: View {
                 await service.fetchFeed()
             }
         }
+        .sheet(isPresented: $isShowingDeck) {
+            StoryDeckView(
+                items: filteredItems.isEmpty ? service.items : filteredItems,
+                currentIndex: $deckIndex,
+                onDismiss: { isShowingDeck = false }
+            )
+        }
         .sheet(item: $selectedItem) { item in
             DetailSheetView(item: item, language: language) {
                 selectedItem = nil
@@ -224,7 +260,11 @@ public struct ContentView: View {
         .onOpenURL { url in
             guard url.scheme == "citybuzz" else { return }
             let articleId = url.lastPathComponent
-            if let match = service.items.first(where: { $0.id == articleId }) {
+            let targetList = filteredItems.isEmpty ? service.items : filteredItems
+            if let idx = targetList.firstIndex(where: { $0.id == articleId }) {
+                deckIndex = idx
+                isShowingDeck = true
+            } else if let match = service.items.first(where: { $0.id == articleId }) {
                 selectedItem = match
             }
         }
