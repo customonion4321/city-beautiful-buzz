@@ -1,8 +1,8 @@
-name: City Beautiful Buzz — News Scraper
+name: City Beautiful Buzz — Hyperlocal News Scraper
 
 on:
   schedule:
-    # Run every 15 minutes (GitHub Actions minimum is 5 min, we use 15 for reliability)
+    # Run every 15 minutes
     - cron: '*/15 * * * *'
   workflow_dispatch:  # Allow manual trigger from GitHub UI anytime
 
@@ -19,7 +19,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1  # shallow clone for speed
+          fetch-depth: 1
 
       # ── 2. Set up Python ──────────────────────────────────────────────────
       - name: Set up Python 3.12
@@ -39,16 +39,21 @@ jobs:
         env:
           PYTHONUNBUFFERED: "1"
 
-      # ── 5. Commit & push updated news.json ───────────────────────────────
+      # ── 5. Sync bundled news.json for native Xcode builds ─────────────────
+      - name: Sync bundled news.json
+        run: |
+          cp Backend/data/news.json CityBeautifulBuzz/news.json
+          cp Backend/data/news.json CityBeautifulBuzzWidget/news.json
+
+      # ── 6. Commit & push updated news.json ────────────────────────────────
       - name: Commit and push news.json
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name  "GitHub Actions Bot"
-          git add Backend/data/news.json
-          # Only commit if there are actual changes
+          git add Backend/data/news.json CityBeautifulBuzz/news.json CityBeautifulBuzzWidget/news.json
           if git diff --staged --quiet; then
             echo "No changes to news.json — skipping commit."
           else
-            git commit -m "chore: update news.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+            git commit -m "chore: update hyperlocal news.json [$(date -u '+%Y-%m-%d %H:%M UTC')]"
             git push
           fi

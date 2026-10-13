@@ -1,7 +1,8 @@
 """
 Normalizer — City Beautiful Buzz
 Converts raw scraped items into the final, clean JSON schema
-consumed by the macOS widget.
+consumed by the macOS widget and companion app.
+Ranks stories by hyperlocal civic urgency and recency.
 """
 
 import hashlib
@@ -17,17 +18,20 @@ LOGOS_BASE = f"{GITHUB_PAGES_BASE}/logos"
 
 # Source metadata (logo colors for display in widget)
 SOURCE_COLORS: dict[str, str] = {
-    "hindustan_times":    "#E8001D",
-    "indian_express":     "#E43131",
-    "ndtv_chandigarh":    "#D81920",
-    "tribune_india":      "#0047AB",
-    "tricity_tribune":    "#0047AB",
-    "jagran_chandigarh":  "#FF6200",
-    "punjab_kesari":      "#FF0000",
-    "amar_ujala":         "#DD0000",
-    "chandigarh_media":   "#1A73E8",
-    "chandigarh_bytes":   "#2C3E50",
-    "allevents":          "#7B68EE",
+    "google_news_chd_sectors":   "#0047AB",
+    "google_news_chd_mc":        "#1A73E8",
+    "google_news_chd_admin":     "#2C3E50",
+    "google_news_chd_traffic":   "#E43131",
+    "google_news_chd_hi_sectors":"#E8001D",
+    "google_news_chd_hi_mc":     "#DD0000",
+    "google_news_chd_hi_admin":  "#FF6200",
+    "hindustan_times":           "#E8001D",
+    "indian_express":            "#E43131",
+    "tribune_india":             "#0047AB",
+    "amar_ujala":                "#DD0000",
+    "chandigarh_media":          "#1A73E8",
+    "chandigarh_bytes":          "#2C3E50",
+    "allevents":                 "#7B68EE",
 }
 
 DEFAULT_COLOR = "#555555"
@@ -41,16 +45,14 @@ def _generate_id(item: dict) -> str:
 
 def _importance(item: dict) -> str:
     """
-    Assign importance level based on category.
-    Alerts and governance are high; lifestyle is low.
+    Assign importance level based on category and hyperlocal score.
     """
-    high = {"alerts", "governance", "infrastructure"}
-    medium = {"events", "important_dates", "education", "health", "safety", "sports"}
+    score = item.get("hyperlocal_score", 10)
+    cat = item.get("category_id", "governance")
 
-    cat = item.get("category_id", "general")
-    if cat in high:
+    if cat == "alerts" or score >= 45:
         return "high"
-    elif cat in medium:
+    elif cat in {"governance", "infrastructure"} or score >= 25:
         return "medium"
     return "low"
 
@@ -72,12 +74,13 @@ def normalize(item: dict) -> dict:
         # ── Identity ──────────────────────────────────────────────────────
         "id": _generate_id(item),
         # ── Content ───────────────────────────────────────────────────────
-        "title":     _sanitize_text(item.get("title", "Untitled")),
-        "summary":   _sanitize_text(item.get("summary", "")),
+        "title":             _sanitize_text(item.get("title", "Untitled")),
+        "summary":           _sanitize_text(item.get("summary", "")),
+        "sector_tag":        item.get("sector_tag", "CHANDIGARH"),
         # ── Category ──────────────────────────────────────────────────────
-        "category_id":       item.get("category_id", "general"),
-        "category_label_en": item.get("category_label_en", "📰 General"),
-        "category_label_hi": item.get("category_label_hi", "📰 सामान्य"),
+        "category_id":       item.get("category_id", "governance"),
+        "category_label_en": item.get("category_label_en", "🏛️ Civic"),
+        "category_label_hi": item.get("category_label_hi", "🏛️ प्रशासन"),
         # ── Source ────────────────────────────────────────────────────────
         "source": {
             "id":          source_id,
@@ -86,33 +89,30 @@ def normalize(item: dict) -> dict:
             "color":       SOURCE_COLORS.get(source_id, DEFAULT_COLOR),
             "article_url": item.get("article_url", ""),
             "language":    item.get("language", "en"),
-            "tier":        item.get("tier", 3),
+            "tier":        item.get("tier", 1),
         },
         # ── Metadata ──────────────────────────────────────────────────────
-        "published_at": item.get("published_at", datetime.now(timezone.utc).isoformat()),
-        "importance":   _importance(item),
+        "published_at":     item.get("published_at", datetime.now(timezone.utc).isoformat()),
+        "importance":       _importance(item),
+        "hyperlocal_score": item.get("hyperlocal_score", 10),
     }
 
 
 def normalize_all(items: list[dict]) -> list[dict]:
-    """Normalize a list of raw items and sort by importance + recency."""
+    """
+    Normalize items and sort by civic urgency:
+    Primary: High importance / high hyperlocal score first.
+    Secondary: Publication timestamp descending.
+    """
     normalized = [normalize(item) for item in items]
 
-    # Sort: high importance first, then by published_at desc
-    importance_order = {"high": 0, "medium": 1, "low": 2}
-    normalized.sort(
-        key=lambda x: (
-            importance_order.get(x.get("importance", "low"), 2),
-            x.get("published_at", ""),
-        ),
-        reverse=False,
-    )
+    # Sort descending by hyperlocal_score, with alerts getting top priority
+    def sort_key(item: dict):
+        cat = item.get("category_id", "")
+        cat_boost = 100 if cat == "alerts" else 0
+        score = item.get("hyperlocal_score", 10) + cat_boost
+        pub_at = item.get("published_at", "")
+        return (score, pub_at)
 
-    # Re-sort published_at descending within same importance
-    from itertools import groupby
-    final = []
-    for _, group in groupby(normalized, key=lambda x: x.get("importance")):
-        group_list = sorted(list(group), key=lambda x: x.get("published_at", ""), reverse=True)
-        final.extend(group_list)
-
-    return final
+    normalized.sort(key=sort_key, reverse=True)
+    return normalized

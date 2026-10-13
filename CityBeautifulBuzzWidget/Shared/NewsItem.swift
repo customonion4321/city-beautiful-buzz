@@ -1,6 +1,6 @@
 //
 //  NewsItem.swift
-//  CityBeautifulBuzz
+//  CityBeautifulBuzzWidget
 //
 //  Decodes the live JSON schema served by GitHub Pages.
 //
@@ -43,6 +43,16 @@ public struct NewsSource: Codable, Hashable, Sendable {
         case language
         case tier
     }
+
+    public init(id: String, name: String, logoUrl: String, color: String, articleUrl: String, language: String, tier: Int) {
+        self.id = id
+        self.name = name
+        self.logoUrl = logoUrl
+        self.color = color
+        self.articleUrl = articleUrl
+        self.language = language
+        self.tier = tier
+    }
 }
 
 public struct NewsItem: Identifiable, Codable, Hashable, Sendable {
@@ -55,6 +65,7 @@ public struct NewsItem: Identifiable, Codable, Hashable, Sendable {
     public let source: NewsSource
     public let publishedAt: String
     public let importance: String
+    public let serverSectorTag: String?
 
     enum CodingKeys: String, CodingKey {
         case id
@@ -66,6 +77,31 @@ public struct NewsItem: Identifiable, Codable, Hashable, Sendable {
         case source
         case publishedAt = "published_at"
         case importance
+        case serverSectorTag = "sector_tag"
+    }
+
+    public init(
+        id: String,
+        title: String,
+        summary: String,
+        categoryId: String,
+        categoryLabelEn: String,
+        categoryLabelHi: String,
+        source: NewsSource,
+        publishedAt: String,
+        importance: String,
+        serverSectorTag: String? = nil
+    ) {
+        self.id = id
+        self.title = title
+        self.summary = summary
+        self.categoryId = categoryId
+        self.categoryLabelEn = categoryLabelEn
+        self.categoryLabelHi = categoryLabelHi
+        self.source = source
+        self.publishedAt = publishedAt
+        self.importance = importance
+        self.serverSectorTag = serverSectorTag
     }
 
     /// Localized category display label
@@ -80,7 +116,10 @@ public struct NewsItem: Identifiable, Codable, Hashable, Sendable {
 
     /// Detected Chandigarh sector or landmark tag
     public var sectorTag: String {
-        SectorExtractor.extract(from: title, summary: summary)
+        if let s = serverSectorTag, !s.isEmpty, s != "CHANDIGARH" {
+            return s
+        }
+        return SectorExtractor.extract(from: title, summary: summary)
     }
 
     /// Relative time string (e.g., "2h ago" or "2 घंटे पहले")

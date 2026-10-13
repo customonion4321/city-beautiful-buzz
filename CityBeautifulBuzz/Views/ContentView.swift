@@ -247,5 +247,12 @@ public struct ContentView: View {
                 selectedItem = nil
             }
         }
+        .onOpenURL { url in
+            guard url.scheme == "cbb" else { return }
+            let articleId = url.lastPathComponent
+            if let match = service.items.first(where: { $0.id == articleId }) {
+                selectedItem = match
+            }
+        }
     }
 }
