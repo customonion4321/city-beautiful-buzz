@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project": "City Beautiful Buzz",
   "city": "Chandigarh",
-  "last_updated": "2026-10-17T22:15:35.169326+00:00",
+  "last_updated": "2026-10-18T00:03:45.895534+00:00",
   "item_count": 120,
   "items": [
     {
@@ -149,27 +149,6 @@
         "tier": 1
       },
       "published_at": "2026-10-17T02:16:20+00:00",
-      "importance": "high",
-      "hyperlocal_score": 45
-    },
-    {
-      "id": "chd-faf509d0d1",
-      "title": "चंडीगढ़ सेक्टर 8 डीएवी पब्लिक स्कूल में नन्हे-मुन्नों ने प्रस्तुत किया रामायण दर्शन, रामलीला के जरिए दिया सत्य और धर्म का संदेश - Arth Parkash",
-      "summary": "चंडीगढ़ सेक्टर 8 डीएवी पब्लिक स्कूल में नन्हे-मुन्नों ने प्रस्तुत किया रामायण दर्शन, रामलीला के जरिए दिया सत्य और धर्म का संदेश Arth Parkash",
-      "sector_tag": "SEC 8",
-      "category_id": "education",
-      "category_label_en": "📚 Education",
-      "category_label_hi": "📚 शिक्षा",
-      "source": {
-        "id": "google_news_chd_hi_sectors",
-        "name": "Arth Parkash",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#E8001D",
-        "article_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOY1h2ejMyeDdXX0JCY0FINkN5YXBPcndHUm11ZVV2em0yQUY0cmktbjdyTlREZUp3MEozWnBvTDB0a2xUTnNOS2doX0dOb3dmbmhuUi10alg3MzFIUTZiMW5sNXprWGtsMGpNelkwNTduUHQ2TGdxSTRMVl9EcTJzOUhwTGF1OTRkVnp0REpqZVp6eHVGVTIxeHJB?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-10-16T22:41:33+00:00",
       "importance": "high",
       "hyperlocal_score": 45
     },
@@ -657,6 +636,27 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-9661bde4e8",
+      "title": "12 साल, घोटाले हजार: चंडीगढ़ भाजपा दे जवाब : विजयपाल सिंह - Dainik Tribune",
+      "summary": "12 साल, घोटाले हजार: चंडीगढ़ भाजपा दे जवाब : विजयपाल सिंह Dainik Tribune",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Dainik Tribune",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZ3MxQk5CU1l3X01GRzlXdEZwWGFiY0lIX0lvWExRRXVpdTJkMWdOSG9rNklZRlFtLVk4azgtNjZkWU9JTVBKSkgtMldVRXo4T0Y2Qy1KenZzd0RSQlZsMEw3WXktaFNVby12Z1dtQS1ETElOYzA4SlBKR2t3TmI3ZnFwd3dVZkxfRF94Q0w4TUZTbE1qM2h2RkZna2pPQUtwY1FtUXM0S3o5YUJnOTdTMkxwTFZ3LTJGQ0dLYlRia3hhR3JQcFHSAcYBQVVfeXFMTmdzMUJOQlNZd19NRkc5V3RGcFhhYmNJSF9Jb1hMUUV1aXUyZDFnTkhvazZJWUZRbS1ZOGs4LTY2ZFlPSU1QSkpILTJXVUV6OE9GNkMtSnp2c3dEUkJWbDBMN1l5LWhTVW8tdmdXbUEtRExJTmMwOEpQSkdrd05iN2ZxcHd3VWZMX0RfeENMOE1GU2xNajNodkZGZ2tqT0FLcGNRbVFzNEt6OWFCZzk3UzJMcExWdy0yRkNHS2JUYmt4YUdyUHBR?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-10-17T22:03:57+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-a41e35e551",
       "title": "चंडीगढ़ से बेंगलुरु और गोवा का सफर होगा आसान: 1 दिसंबर से शुरू होगी सीधी उड़ानें; यात्रियों को मिलेगी बेहतर ... - Dainik Bhaskar",
       "summary": "चंडीगढ़ से बेंगलुरु और गोवा का सफर होगा आसान: 1 दिसंबर से शुरू होगी सीधी उड़ानें; यात्रियों को मिलेगी बेहतर ... Dainik Bhaskar",
@@ -699,7 +699,7 @@
       "hyperlocal_score": 10
     },
     {
-      "id": "chd-c6edb22646",
+      "id": "chd-ddaf3e25ec",
       "title": "From Lahore to Chandigarh, PU Ramlila holds on to Urdu roots - The Tribune",
       "summary": "From Lahore to Chandigarh, PU Ramlila holds on to Urdu roots The Tribune",
       "sector_tag": "CHANDIGARH",
@@ -711,7 +711,7 @@
         "name": "The Tribune",
         "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
         "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV083THI3QVNGbkgxem5NaFJmSlZMckZJMHVoZGktYTlNZmMwdlVKNWNpc0gtblV3ZGlUekpfckRBRk01eDVHa0VUMm9qVkFKY21Gc1ZfbXBWbVVhV0NCblFmLVdTMjVHTDVFT3Fnc0UyTzlzQUM3eS1fNjVDN1doX3pfWU8yeGFIaGpWbXdiSmIyR1F6V2xHeXlBbEpQZ3lfakdjczVBNEQ1NFJqRnJ0aWlRSVJ2eDNmcHpHVjVtY1lOOUg4T1ZZNdIByAFBVV95cUxNV083THI3QVNGbkgxem5NaFJmSlZMckZJMHVoZGktYTlNZmMwdlVKNWNpc0gtblV3ZGlUekpfckRBRk01eDVHa0VUMm9qVkFKY21Gc1ZfbXBWbVVhV0NCblFmLVdTMjVHTDVFT3Fnc0UyTzlzQUM3eS1fNjVDN1doX3pfWU8yeGFIaGpWbXdiSmIyR1F6V2xHeXlBbEpQZ3lfakdjczVBNEQ1NFJqRnJ0aWlRSVJ2eDNmcHpHVjVtY1lOOUg4T1ZZNQ?oc=5",
+        "article_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbWFjREp2bWl4SnhHWU5ZbDJzcWJTZUk2QjlzR2hRNG5QNDJlRjROUFYzdFZyeGtNY3FtTGRxb3lidHF5U1lGZDdBNGstT1ZrSGxoR2hfa2NKenhac19tTnA3cFZHUDJCX2RyMExzS1FYeE9RYlVhQmZ3TmZTWFR0dl85dFhxck1LSWR4bzJsZnhCNXlsZUlYTWd6bUVaV19wQlJGbFdlN3hYZG9n0gGsAUFVX3lxTFBtYWNESnZtaXhKeEdZTllsMnNxYlNlSTZCOXNHaFE0blA0MmVGNE5QVjN0VnJ4a01jcW1MZHFveWJ0cXlTWUZkN0E0ay1PVmtIbGhHaF9rY0p6eFpzX21OcDdwVkdQMkJfZHIwTHNLUVh4T1FiVWFCZndOZlNYVHR2Xzl0WHFyTUtJZHhvMmxmeEI1eWxlSVhNZ3ptRVpXX3BCUkZsV2U3eFhkb2c?oc=5",
         "language": "en",
         "tier": 1
       },
@@ -825,7 +825,7 @@
       "hyperlocal_score": 10
     },
     {
-      "id": "chd-ab185a2e6c",
+      "id": "chd-d28c272b32",
       "title": "Chandigarh News: एसडी कॉलेज में मनाया एंटरप्रेन्योरशिप वीक - Amar Ujala",
       "summary": "Chandigarh News: एसडी कॉलेज में मनाया एंटरप्रेन्योरशिप वीक Amar Ujala",
       "sector_tag": "CHANDIGARH",
@@ -837,7 +837,7 @@
         "name": "Amar Ujala",
         "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
         "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZy1pRHRfdTJfNWx3NVhsblp2NTAwbmMwNVVKaU51TTlvcUZUb2hiYlB0ejc3Z2NCSVBLN1hfTXZzR3dwS2F3bW1XMDd6X2h2QUpiVzVDOF95T25ueG5HN3llOFZtRk41bGRhTWtvYmdVcGdXVVhkVVVXVGxMMUFoT0lXbF9NNWYxT290c2lLc2p0TDQzZUJub2xaV0V6QWZQM2pmOHR1bE9RR2JONEhnWDFmaXZsUEpqTDNzQ1ZTWmxpSjN0M0ZzVV9ta9IB0AFBVV95cUxNYTZMa2k2T3Zob2s3ZjBFNWdqZ2FMWHY1U29zMmNYa1BUZVRHdFhsZHp1ZXllXzVTdDZsREFmSHUzVFF2aW44R2pwYmQzd1dnUnF0SVYyNXMyYVFMYkk1S0xrdUY0cnhpeTZLbi1ZVnpmTDVnUGdNUVBQOTFJRlNmamEzMTM2ZndiYzF2RzBJU0g5ZjVQbmFzZGRidk5vWnFEZTY4dlZPRHoxRjM3T2lzYjRxTTZMOWZhOWxGWTE1VzM1a1Y0QVh0WlJVRHV5Skli?oc=5",
+        "article_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNYTZMa2k2T3Zob2s3ZjBFNWdqZ2FMWHY1U29zMmNYa1BUZVRHdFhsZHp1ZXllXzVTdDZsREFmSHUzVFF2aW44R2pwYmQzd1dnUnF0SVYyNXMyYVFMYkk1S0xrdUY0cnhpeTZLbi1ZVnpmTDVnUGdNUVBQOTFJRlNmamEzMTM2ZndiYzF2RzBJU0g5ZjVQbmFzZGRidk5vWnFEZTY4dlZPRHoxRjM3T2lzYjRxTTZMOWZhOWxGWTE1VzM1a1Y0QVh0WlJVRHV5Skli0gHQAUFVX3lxTE1hNkxraTZPdmhvazdmMEU1Z2pnYUxYdjVTb3MyY1hrUFRlVEd0WGxkenVleWVfNVN0NmxEQWZIdTNUUXZpbjhHanBiZDN3V2dScXRJVjI1czJhUUxiSTVLTGt1RjRyeGl5NktuLVlWemZMNWdQZ01RUFA5MUlGU2ZqYTMxMzZmd2JjMXZHMElTSDlmNVBuYXNkZGJ2Tm9acURlNjh2Vk9EejFGMzdPaXNiNHFNNkw5ZmE5bEZZMTVXMzVrVjRBWHRaUlVEdXlKSWI?oc=5",
         "language": "hi",
         "tier": 1
       },
@@ -1035,6 +1035,27 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-0da301e472",
+      "title": "खाद्य सब्सिडी वितरण में बड़ा बदलाव, चंडीगढ़ और दादरा एवं नगर हवेली से शुरू होगी डिजिटल पहल - DD News",
+      "summary": "खाद्य सब्सिडी वितरण में बड़ा बदलाव, चंडीगढ़ और दादरा एवं नगर हवेली से शुरू होगी डिजिटल पहल DD News",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "DD News",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRW5YWW1QWkVOYklqZmN5bnhPMm9tMU00Wi1ybFVPWWRSbGZWcFZlRHBLTms1a2lPNG04WWNpYTJPMmNRSmdIVjI1emZ6Vlk3eUxGSzd4cFMtZlc3UXdIM3F1SGFVZThzV3BmUmFOWHpTWmZUY2Z1TjZwWC00V2ZKSDBIanBlcUhBeVJNRGZFSEhDT0szamlrZmFFWUtVTWxJek1kZzQ3b21yeGQwdXRxME52NU9FR0ZPY1E0YmVmb0VxXy1iNTRCNw?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-10-17T19:27:51+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-11726b91c6",
       "title": "Chandigarh Chord | The TS Library: Where Chandigarh learnt to read",
       "summary": "Established in 1955, when Chandigarh itself was still finding its feet, the TS Central State Library grew alongside the young city; for many old residents, the four-storey library is not just a building, it is a memory",
@@ -1119,6 +1140,27 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-2d8b93a532",
+      "title": "Supreme Court Orders Re-Auction of Chandigarh Nursing Home Plot: Agreement to Sell Not Final Contract Under Estate Rules - TaxCorp AI",
+      "summary": "Supreme Court Orders Re-Auction of Chandigarh Nursing Home Plot: Agreement to Sell Not Final Contract Under Estate Rules TaxCorp AI",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "TaxCorp AI",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQa2luODRHQVVENV85d2ZtdTZ6VGpFcUt4aXNtOS1xN1I0eWM0M2xWSm9RdlIyUVVlOS1ZSDBhbXRzaUdoSGU1S2FUcFZwVS13Y09iQWJBTW5lZWRqYThCY1oyOVQtaG5ZNXo2bllyUVFEakxUUnZvSWNPai1ybnZ3Wmd5YWVFR1VXYTRLczJGVVowSDF5S3FOYXRLVS1lWE1kNmNEUHJmZmlKUQ?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-10-17T17:08:41+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-cf5ed7659d",
       "title": "चंडीगढ़ में पंजाब के 3 आरोपियों से पिस्टल बरामद: मेडिकल के बहाने होटल लेकर पहुंची पुलिस,अमृतसर में 307 की FIR - Dainik Bhaskar",
       "summary": "चंडीगढ़ में पंजाब के 3 आरोपियों से पिस्टल बरामद: मेडिकल के बहाने होटल लेकर पहुंची पुलिस,अमृतसर में 307 की FIR Dainik Bhaskar",
@@ -1157,6 +1199,27 @@
         "tier": 1
       },
       "published_at": "2026-10-17T15:46:49+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-056ed5ac28",
+      "title": "चंडीगढ़ से शारजाह-आबू धाबी की फ्लाइटें फिर शुरू: 3 साल बाद रूट पर लौटेगी एयर इंडिया एक्सप्रेस, बुकिंग स्टार... - Dainik Bhaskar",
+      "summary": "चंडीगढ़ से शारजाह-आबू धाबी की फ्लाइटें फिर शुरू: 3 साल बाद रूट पर लौटेगी एयर इंडिया एक्सप्रेस, बुकिंग स्टार... Dainik Bhaskar",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Dainik Bhaskar",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTFBDQzcwYkZlZVhWb1p6dXZWZ1JuTFE4V0pZQ2NBLUI5RzRvdkt4eTBKUld3QWF2b0dzcWpnZGFHVTJmX3ZKZVIwTGN2eC04bl9NeUQ1a0EyY1NQOG5NcHNWWF94UjhPTUUzRXRUTmJKS2MwU0pHeEhUYzlZdUdNOXA3Q2NwdGIzUllXdXNKelJHcWtQdThrQzZmOUdfYWtfTFJIZnhzQ1NRZnpJSG5CR3lUaXBGZFBZTXlpbDRRejVnQS0yd3pqSV9R0gHPAUFVX3lxTFA1bjYtZFRLNjdhanBBWHd3c2pVbGk0QVhpRjhPNG9uUTN3WG9FdmM2V0pLcm1manVTYW5lSzdEOWhaNnYxQTYweXZodnZ6bjFuemtoTHhXeGpRU0xVNGFUSzFaSVJMMHpYb3ZtbVhRc3dYUjA0U01LM2MwbjluTmhFU1dVVndjb1FvZC1lcFFqR0ZTTWh3WU5NZ3R5bFhsMnlZYVRldFVLWF9kc3BwTGgyZUQxeENzbkVTSnlSTlFQM1FqVmxHTHl3Z2QxdTVKNA?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-10-17T15:33:45+00:00",
       "importance": "medium",
       "hyperlocal_score": 10
     },
@@ -1581,6 +1644,27 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-1a9ff04eaa",
+      "title": "चंडीगढ़ मेडिकल कॉलेज में लंगर और आश्रय स्थल का मामला हाईकोर्ट पहुंचा, कैंटीन संचालक ने उठाए लाइसेंस पर सवाल - Arth Parkash",
+      "summary": "चंडीगढ़ मेडिकल कॉलेज में लंगर और आश्रय स्थल का मामला हाईकोर्ट पहुंचा, कैंटीन संचालक ने उठाए लाइसेंस पर सवाल Arth Parkash",
+      "sector_tag": "HIGH COURT",
+      "category_id": "education",
+      "category_label_en": "📚 Education",
+      "category_label_hi": "📚 शिक्षा",
+      "source": {
+        "id": "google_news_chd_hi_sectors",
+        "name": "Arth Parkash",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#E8001D",
+        "article_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMTE4ZnVnbFpXSTJlZ3k1eGFZbTlFM0FBRUozU1RuWU83N01KRDBSakI3d1FvSE94TWJOemJkZkg0U2p3WmM3NXlmUXFpcktRSnZybE9raEFZRUw4TzMtU1lFeC16MFJDNzFVb0VzUEFDOFpoNVNUN0JLVkowU3NkTC04S3JoU3NOZGkwVi1oZzdJdjU5UWg2UTBJSDJRSkFMS20zTno0ZWw4TThWVndrZDBZS3NyS2dYQ1hXX2w2cw?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-10-17T13:09:08+00:00",
+      "importance": "low",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-e3b3d6d8a9",
       "title": "चंडीगढ़ में श्रीमद्भागवत कथा के दूसरे दिन नंदोत्सव और तृतीय वृंदावन प्राकट्य उत्सव बड़े उत्साह से मनाया गया; भक्ति मंत्रों से गूंजा पंडाल - Face2News",
       "summary": "चंडीगढ़ में श्रीमद्भागवत कथा के दूसरे दिन नंदोत्सव और तृतीय वृंदावन प्राकट्य उत्सव बड़े उत्साह से मनाया गया; भक्ति मंत्रों से गूंजा पंडाल Face2News",
@@ -1787,27 +1871,6 @@
         "tier": 1
       },
       "published_at": "2026-10-17T11:18:00+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-056ed5ac28",
-      "title": "चंडीगढ़ से शारजाह-आबू धाबी की फ्लाइटें फिर शुरू: 3 साल बाद रूट पर लौटेगी एयर इंडिया एक्सप्रेस, बुकिंग स्टार... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ से शारजाह-आबू धाबी की फ्लाइटें फिर शुरू: 3 साल बाद रूट पर लौटेगी एयर इंडिया एक्सप्रेस, बुकिंग स्टार... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTFBDQzcwYkZlZVhWb1p6dXZWZ1JuTFE4V0pZQ2NBLUI5RzRvdkt4eTBKUld3QWF2b0dzcWpnZGFHVTJmX3ZKZVIwTGN2eC04bl9NeUQ1a0EyY1NQOG5NcHNWWF94UjhPTUUzRXRUTmJKS2MwU0pHeEhUYzlZdUdNOXA3Q2NwdGIzUllXdXNKelJHcWtQdThrQzZmOUdfYWtfTFJIZnhzQ1NRZnpJSG5CR3lUaXBGZFBZTXlpbDRRejVnQS0yd3pqSV9R0gHPAUFVX3lxTFA1bjYtZFRLNjdhanBBWHd3c2pVbGk0QVhpRjhPNG9uUTN3WG9FdmM2V0pLcm1manVTYW5lSzdEOWhaNnYxQTYweXZodnZ6bjFuemtoTHhXeGpRU0xVNGFUSzFaSVJMMHpYb3ZtbVhRc3dYUjA0U01LM2MwbjluTmhFU1dVVndjb1FvZC1lcFFqR0ZTTWh3WU5NZ3R5bFhsMnlZYVRldFVLWF9kc3BwTGgyZUQxeENzbkVTSnlSTlFQM1FqVmxHTHl3Z2QxdTVKNA?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-10-17T11:16:34+00:00",
       "importance": "medium",
       "hyperlocal_score": 10
     },
@@ -2081,6 +2144,27 @@
         "tier": 1
       },
       "published_at": "2026-10-17T08:41:00+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-ff8bcdba24",
+      "title": "2020 Maruti Celerio 998 cc कार चंडीगढ़ में 3.85 लाख में - CarDekho",
+      "summary": "2020 Maruti Celerio 998 cc कार चंडीगढ़ में 3.85 लाख में CarDekho",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "CarDekho",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNSjhqRlNkZzZtdWRmWHRad0hNekN0N2VNUGdwMmhWZGwySUFKQjFsSkRsX1YzNmR5TGpYMi0wc2FQM19Kc2V1NkVTV2J6bktYdzlQOUp0bHhHcGM2NzZWRDY4U19uMHlQRGU3MGpWSFdXWHRHWGJwYmw3aDA0MWlkZGxZcWhaWlhFNzVGdFR0bnNXRWdoSGVhQ0xvOE45aFJ4SVNWME9MUTgzM3htWFk4d1IzYS13Z0NmcUhsanJuWTVLcHM?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-10-17T08:40:17+00:00",
       "importance": "medium",
       "hyperlocal_score": 10
     },
@@ -2439,90 +2523,6 @@
       },
       "published_at": "2026-10-17T04:30:33+00:00",
       "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-c0dd7bfae0",
-      "title": "Hero Xtreme 160R 4V (2023 -2026) On Road Price Chandigarh Oct 2026 - 1.63L - ZigWheels.com",
-      "summary": "Hero Xtreme 160R 4V (2023 -2026) On Road Price Chandigarh Oct 2026 - 1.63L ZigWheels.com",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "ZigWheels.com",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYVpzN0RHUHQzNlVFS1ZDaVd4MTFjNW5RQk92WXFKaVJyMHZMQUs3UHFhUTd5Z1lYdzVydW9jbWZ0NkhHZTNITDF1Z3daWFpUc1JfSS1iWUV6ZHJDeU5tVDFpSmYtSTQwUkliRS1RVVhFUGc0cnloUnFaaEhPMTQ2UFo2VUY1MWY1aUdrNVJraW8?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-10-17T04:23:57+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-d4a91a5be7",
-      "title": "चंडीगढ़ में 35 राउंडअबाउट की होगी नीलामी: लाइसेंस फीस भी देनी होगी, 23 अक्टूबर तक आवेदन, निगम को 8 करोड़ से... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ में 35 राउंडअबाउट की होगी नीलामी: लाइसेंस फीस भी देनी होगी, 23 अक्टूबर तक आवेदन, निगम को 8 करोड़ से... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQTzhwQksyRnJIdzZldVlDeUtTTG9IQjdKanphM09uU2V2Q1RuTjItNjVnYlJ6RFNmYlRKenkxNFVPang3WUsxUXFNZFdVZzlFcUlVOHZNUk9Vdm9SblMydktreWYwbURkaC1QTWNOTXVtQk5BZmpYcG5OMU5JRjhIRld5bDF6MHRkQ092bHd3bGJibWRIUHB4cEZOZGlGZHR1Zk80MG9XaWczLUwybWpOWWtYYmlXMldLTnlaQlhFYVo4TWZoaXlpRUtB0gHKAUFVX3lxTFBPOHBCSzJGckh3NmV1WUN5S1NMb0hCN0pqemEzT25TZXZDVG5OMi02NWdiUnpEU2ZiVEp6eTE0VU9qeDdZSzFRcU1kV1VnOUVxSVU4dk1ST1V2b1JuUzJ2S2t5ZjBtRGRoLVBNY05NdW1CTkFmalhwbk4xTklGOEhGV3lsMXowdGRDT3Zsd3dsYmJtZEhQcHhwRk5kaUZkdHVmTzQwb1dpZzMtTDJtak5Za1hiaVcyV0tOeVpCWEVhWjhNZmhpeWlFS0E?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-10-17T04:13:39+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-575f01c120",
-      "title": "पानीपत की होम एम्पीरियम सोसाइटी से व्यक्ति लापता: चंडीगढ़ जाने की बात कहकर निकला, 10 दिन बाद भी नहीं लौटा वापस - Dainik Bhaskar",
-      "summary": "पानीपत की होम एम्पीरियम सोसाइटी से व्यक्ति लापता: चंडीगढ़ जाने की बात कहकर निकला, 10 दिन बाद भी नहीं लौटा वापस Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOR2c0UE9FM0NEOGFHMXpHcVQtZDA2YVlnNVJOaFRfcnVQTkFQMnBZb2l1MjdmVlBLWlZEd0NOdGZob1RFdEo3NS1yMUZ6SmliQThwY2pyZzBNVXdDRjFCekJES1NoeWFqc3BxbUVHc0FqM0VfUWpjQTdEQk9ycFpOODBLa3VseWxMY0lMYWRTbzl4ektDY1RsT2pFcjRHeUZ3NFJ0NzNLNW9NaUVzZ1ZnM3lxY1RiWG1zTU0yQ9IBwgFBVV95cUxOLVY2aWFmdTRBcFBtdHB4Q1haQWFLejdjVEtmUzgyekl5VzRYaU5JZkk4cUp5TjFsQlRkX1p3NExpazBwd0pjNDhXRmNIYTFtUEtsblc0cGJjVmk5UDhBNDRYLU8zYWttQ2JocjZvVWNINVZCTC0zNGNlX2FzNEw5OGZkX0pHS29Vc3k1ZFdTVlJSMjVPR19pYW5OVEY4TGJfMlFHR1ZaT1hJVHc0VG5mbDZvRDBRbDNmbGlZRC1jYWRodw?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-10-17T03:58:07+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-e34957d45a",
-      "title": "सरदार वल्लभभाई पटेल की जयंती पर फाइट अगेंस्ट ड्रग्स अभियान के तहत चंडीगढ़ के स्कूलों में जागरूकता कार्यक्रम आयोजित - Arth Parkash",
-      "summary": "सरदार वल्लभभाई पटेल की जयंती पर फाइट अगेंस्ट ड्रग्स अभियान के तहत चंडीगढ़ के स्कूलों में जागरूकता कार्यक्रम आयोजित Arth Parkash",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "education",
-      "category_label_en": "📚 Education",
-      "category_label_hi": "📚 शिक्षा",
-      "source": {
-        "id": "google_news_chd_hi_sectors",
-        "name": "Arth Parkash",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#E8001D",
-        "article_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPbjFvdmwtS3VpWW9uVmw5QlRUdEo0ay1GLVZKQ3I4bG9WUTdnT2JIM2x2X2xIdElBd1ZuT1VPQUNaSmFjN1Y3WklxdUl0SkRVZ2E0ZUZqTVU4VHhSYkpTYV9WMmpoaDdvTlp5Wk1hZllLRG5pWl9sRUhuV1ZnSUVMM2JGS3hLSWYxampId2dkbkNFbWVsSDUtZnJaUjM5ZzRKd3ZjblVaOGkxaFZPMUxzTzVHaF93MF9MbmVmVnRTY0sydVN0ZTFyNXBkc25oTnpkaTM4bDFKM05uMjNkc3NjOQ?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-10-17T03:54:00+00:00",
-      "importance": "low",
       "hyperlocal_score": 10
     }
   ]
