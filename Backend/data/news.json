@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "project": "City Beautiful Buzz",
   "city": "Chandigarh",
-  "last_updated": "2026-11-07T19:42:08.829742+00:00",
+  "last_updated": "2026-11-07T22:59:59.063464+00:00",
   "item_count": 120,
   "items": [
     {
@@ -258,27 +258,6 @@
       "hyperlocal_score": 40
     },
     {
-      "id": "chd-dcb5147f3b",
-      "title": "MC CHANDIGARH CALLS FOR SAFE, CLEAN AND GREEN DIWALI; ISSUES FIRE SAFETY ADVISORY - :: India News Calling ::",
-      "summary": "MC CHANDIGARH CALLS FOR SAFE, CLEAN AND GREEN DIWALI; ISSUES FIRE SAFETY ADVISORY :: India News Calling ::",
-      "sector_tag": "MC CHD",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_mc",
-        "name": ":: India News Calling ::",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#1A73E8",
-        "article_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNWUhaakVXR1pWOHJaSWtkQWQtNjZBX0E5cm9pbS1rYlJkckZ3ZVhNandLaURKY0V6M19sS3ZaYzBvMVR2cnhRTDJodnVlbGlLdjNPOXVnUTdXQWdvT0lDQjFDR1J4RlNWakl3eU5tMUVUUDYweV9sYi1LT0d6NzdBMEI3ekVodmhwcFFpVnRlMllsTXBLQkdLaG5aby04cDFtckZsTW9iZWJPZnF6S2txdVRrU1VUUUhjTEVTYW1PRVpJUDZtSzBlMk9HVkt3R0ZHc3M3emJLUnhFOW02V2c?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-06T20:15:00+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 40
-    },
-    {
       "id": "chd-d7fabd4006",
       "title": "CHANDIGARH POLICE BRIEF OF CASES DATED-07.11.2026 - :: India News Calling ::",
       "summary": "CHANDIGARH POLICE BRIEF OF CASES DATED-07.11.2026 :: India News Calling ::",
@@ -319,6 +298,27 @@
       "published_at": "2026-11-07T04:48:43+00:00",
       "importance": "medium",
       "hyperlocal_score": 35
+    },
+    {
+      "id": "chd-5f8db81f02",
+      "title": "\"Never consume any drugs\": Jhota's father to youth of Punjab; autopsy conducted at PGIMER, cremation today - Big News Network.com",
+      "summary": "\"Never consume any drugs\": Jhota's father to youth of Punjab; autopsy conducted at PGIMER, cremation today Big News Network.com",
+      "sector_tag": "PGIMER",
+      "category_id": "health",
+      "category_label_en": "🏥 Health",
+      "category_label_hi": "🏥 स्वास्थ्य",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "Big News Network.com",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUFpvX055Q3NBZ2VmUEphTG1wS21saDFwRDRpTXZWdTFIZHBjLTZmZy16SVZ0SW1LaGxPcmN2WVRXd2tUelh0bFFab1NKbk9NTlBONzhrOVpoYmEwYU11ZUpObmNxVXF5THppcVhTWHZ0VUJtaEd2R0d6WHozUFkzYW9UUWVzYjlSdk9nSUI3VjhoX0xkUmtidWM0OVZEWVo4MG5zMHN4XzZWWlg4bHpOVkROY21oVlBZaU5MWUJybEhTclh2U0JoUFZsbHFRWGx2QzJmZTFjYU1PY2YwZmc?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T21:57:00+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 30
     },
     {
       "id": "chd-b07f3c59f9",
@@ -573,25 +573,571 @@
       "hyperlocal_score": 30
     },
     {
-      "id": "chd-b2e3619472",
-      "title": "PGIMER issues safety advisory ahead of Diwali - The Tribune",
-      "summary": "PGIMER issues safety advisory ahead of Diwali The Tribune",
+      "id": "chd-98aa8e5c86",
+      "title": "Chandigarh News: ड्डूमाजरा स्कूल के दिवाली मेले में बच्चों ने दिखाई हुनर की चमक",
+      "summary": "ड्डूमाजरा स्कूल के दिवाली मेले में बच्चों ने दिखाई हुनर की चमक",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "education",
+      "category_label_en": "📚 Education",
+      "category_label_hi": "📚 शिक्षा",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/children-showcased-their-talent-at-the-dadu-majra-school-diwali-fair-chandigarh-news-c-16-pkl1049-1169590-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:53:28+05:30",
+      "importance": "low",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-c085582a56",
+      "title": "Chandigarh News: रितु की दिवाली का अंदाज सबसे जुदा",
+      "summary": "रितु की दिवाली का अंदाज सबसे जुदा",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/ritu-diwali-style-is-different-from-others-chandigarh-news-c-16-pkl1049-1169648-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:52:35+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-dca26faa6d",
+      "title": "Chandigarh News: इलाज के लिए कर्ज लिया, पीजीआई में स्ट्रेचर से महिला का पर्स उड़ाया",
+      "summary": "इलाज के लिए कर्ज लिया, पीजीआई में स्ट्रेचर से महिला का पर्स उड़ाया",
       "sector_tag": "PGIMER",
       "category_id": "health",
       "category_label_en": "🏥 Health",
       "category_label_hi": "🏥 स्वास्थ्य",
       "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/borrowed-money-for-medical-treatment-woman-purse-stolen-from-a-stretcher-at-pgi-chandigarh-news-c-16-pkl1079-1169986-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:51:58+05:30",
+      "importance": "low",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-1d62bc7213",
+      "title": "Chandigarh News: कयाकिंग-कैनोइंग में चंडीगढ़ यूनिवर्सिटी बनी ओवरऑल चैंपियन",
+      "summary": "कयाकिंग-कैनोइंग में चंडीगढ़ यूनिवर्सिटी बनी ओवरऑल चैंपियन",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/chandigarh-university-emerges-as-overall-champion-in-kayaking-canoeing-chandigarh-news-c-16-pkl1079-1169571-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:50:45+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-17ad175c96",
+      "title": "Chandigarh News: काले कपड़े पहन कर्मचारियों ने किया रोष प्रदर्शन",
+      "summary": "काले कपड़े पहन कर्मचारियों ने किया रोष प्रदर्शन",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/employees-staged-a-protest-while-dressed-in-black-chandigarh-news-c-16-pkl1079-1169600-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:50:17+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-a71f137fdc",
+      "title": "Chandigarh News: उद्योगों को मिलेगी ज्यादा निर्माण की छूट, एफएआर-2 के लिए मास्टर प्लान में बदलाव जरूरी",
+      "summary": "उद्योगों को मिलेगी ज्यादा निर्माण की छूट, एफएआर-2 के लिए मास्टर प्लान में बदलाव जरूरी",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/industries-to-be-granted-greater-construction-leeway-amendments-to-the-master-plan-required-for-an-far-of-2-chandigarh-news-c-16-pkl1079-1169691-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:49:04+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-d17823d470",
+      "title": "Chandigarh News: कमल 100 रुपये का, गेंदे की माला भी 50 रुपये में... दिवाली पर फूलों के दाम में उछाल",
+      "summary": "कमल 100 रुपये का, गेंदे की माला भी 50 रुपये में... दिवाली पर फूलों के दाम में उछाल",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/lotus-flowers-for-100-marigold-garlands-for-50-a-surge-in-flower-prices-for-diwali-chandigarh-news-c-16-pkl1079-1169673-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:48:49+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-a23ec7c929",
+      "title": "Chandigarh News: प्रेमिका संग दिवाली पर खाना खाने जा रहे शादीशुदा युवक को घेरकर पीटा",
+      "summary": "प्रेमिका संग दिवाली पर खाना खाने जा रहे शादीशुदा युवक को घेरकर पीटा",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/a-married-man-was-surrounded-and-beaten-while-going-to-have-dinner-with-his-girlfriend-on-diwali-chandigarh-news-c-16-1-pkl1005-1170160-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:48:05+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-61527d4221",
+      "title": "Chandigarh News: दीयों की चमक, मिठाइयों की महक... खरीदारी के लिए बाजारों में उमड़ा शहर",
+      "summary": "दीयों की चमक, मिठाइयों की महक... खरीदारी के लिए बाजारों में उमड़ा शहर",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/the-glow-of-lamps-the-aroma-of-sweets-the-city-flocks-to-the-markets-for-shopping-chandigarh-news-c-16-pkl1079-1169708-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:47:27+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-e1e4ff3bed",
+      "title": "Chandigarh News: दिवाली पर अपनों को दें शुद्ध हवा का उपहार",
+      "summary": "दिवाली पर अपनों को दें शुद्ध हवा का उपहार",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/give-the-gift-of-clean-air-to-your-loved-ones-this-diwali-chandigarh-news-c-16-pkl1049-1169720-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:47:05+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-4dc781034a",
+      "title": "Chandigarh News: किसी के घर जल रहे थे दीये, किसी की आंखों में अपनों का इंतजार...",
+      "summary": "किसी के घर जल रहे थे दीये, किसी की आंखों में अपनों का इंतजार...",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "amar_ujala",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://www.amarujala.com/chandigarh/in-some-homes-lamps-were-burning-in-some-eyes-there-was-a-wait-for-loved-ones-chandigarh-news-c-16-pkl1079-1169755-2026-11-08",
+        "language": "hi",
+        "tier": 2
+      },
+      "published_at": "2026-11-08T01:46:41+05:30",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-e64054b1b9",
+      "title": "चंडीगढ़ की विरासत विदेशों में हो रही नीलाम: प्रशासन ने रोकने के लिए बनाया नया सिस्टम, ऑक्शन हाउस पर नजर रखे... - Dainik Bhaskar",
+      "summary": "चंडीगढ़ की विरासत विदेशों में हो रही नीलाम: प्रशासन ने रोकने के लिए बनाया नया सिस्टम, ऑक्शन हाउस पर नजर रखे... Dainik Bhaskar",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Dainik Bhaskar",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX0VHQ1lDS0hVTDJ2eHZ2cV84WmVOam1XUmFOdmtZbV82c3ZDM2RScG90cG9VeFJKbnBYNTNBM0QwOUtDT0llV1RJamVsbzZPRm1ZaVRaNjg5Mk9RTFVvOWRoeFhTLUcydE4tdnJCUGF2eG1VUWxHenh4ZllIMU42ZEJBT25VOHE2ckxWQkhRb3dqbktUcXhwMVdPbWZTVGtXTTQzRXB5NXNhRkZGWXZaRmxBM1FQeWhwWFUtTERrU1DSAcYBQVVfeXFMTmx1YWlQeVJ3d3NQQzdHTmdFNVQ0Q2VESWowYUpyMkJFaDVuMGdlSW5McHRRVzZ0bE5TR0kzUlpqTUlXZkRrd2w5Uk5sT0tuV0lnSVlzT2dIUllXVWdsY2xlUVQwaTdkTFU2RnZudzJyejJtTTZVM3JWcEgxczZJN2NmMG8wOW83cTJKakdobnhKWGZqcVlxSVRqakZHYXU3Z3B6RXBSTmVYbWt5QkV6dEtQNm02ZEhYUmp0bk9zVFR4ZURoNlJ3?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T21:25:44+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-f197b943a1",
+      "title": "Chandigarh News: रितु की दिवाली का अंदाज सबसे जुदा - Amar Ujala",
+      "summary": "Chandigarh News: रितु की दिवाली का अंदाज सबसे जुदा Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZkN2TXZUNWx0YnRacS0zM21LQjdla0lLeWVtbFNycEd4Q1piTnJYY0VFYzhVYUlReFhobFdmTkFkb2xuSG1NTmh5SEZmS2QtQTM3N1NBSVdzanl3TUhCN0xGYmZOTmxyRVROWks4SUJyRVdkemlMb3RSNXZmVkRRLVVhbzZuRFNFTDFNRjAzMVlsQUhyMXd3QkdoTnoyZ3ZpWFRJU2NCOExaaFh1T1UwLVNPbEcyaTNKdy1Fc0JmZVVyOXZKQVHSAcsBQVVfeXFMTTFWa1F4WEE0QnVqeTdqaG1iX2c2MWdWZllGaEVPTUphd3FaU3dpTzVBNHdJLWt2LXVBMlFRdGdRcUlQX3NKVUkycENGQjhEell0N2Nsc0JQQkJ1aU1qcVdnTTh2djk4eTJZa3hsZ0JMRmRGX2gyV0h4Smp5cGV6UlNiZFJrdlhoMjdLRDdnYVBVNU13eDJNeVh2M0tKNVdpT3ZnbkZGVUJJck8tZFQxUE5xTl9PVW9sanVvb2tLc1BwWVVqYndQd2xWaWs?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:22:35+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-d05e95fe59",
+      "title": "Chandigarh News: इलाज के लिए कर्ज लिया, पीजीआई में स्ट्रेचर से महिला का पर्स उड़ाया - Amar Ujala",
+      "summary": "Chandigarh News: इलाज के लिए कर्ज लिया, पीजीआई में स्ट्रेचर से महिला का पर्स उड़ाया Amar Ujala",
+      "sector_tag": "PGIMER",
+      "category_id": "health",
+      "category_label_en": "🏥 Health",
+      "category_label_hi": "🏥 स्वास्थ्य",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNTVdWUGRJSzA3WFdzbko0VnIweWNKT3N0dGczYWJlcGNjZ0c2RTRfLWxPTC11X3EyM2psQUE5WGZJOFZwYktPVndGUVAzZkpUbUlUMnJuRVd3NThTM2h6dE1YZmtFVnFHNjZKbE93aTBaUDdUblRZYk9QcW50OHBFOENKMGYwVmowejBaUDRseTkyYU8xU2diYmJDUElZbmVMWTk2WWxKLUFHbGdEeFA4elhPeXJGVk5xNWpLTVlwX1F6QXVyR182UFU5UXAxUFIxZ3JDb1VjWjZRWXR0UWNuNk1peGV2NlpqUUZxWVRfM1ZXXzAwOVpr0gH8AUFVX3lxTE9USE05UVBxTFFwY0I2MnpFUnRMSVlsZnFqaDh0UTdFWVVwbnQwN3Rva2dSRk1CTkRsZnBYdnlWcnh2T0FrdDhjc2lud0M3VU9CemJOWEVoc0Q4NnN2WFR0UnliSThyd0RuXzhhOS1hSGozZGFQSndhempjVXZRTFI3N0NMMVBCdGtxQlBDay1TOTV1cWNuek5MU3N5bUszanRtR1c0aW9pRGMwWE5kNnQzYk1DSXl1QW9DWlNndjJZMTdwU2M1cTZad3NZS2cydEVSSDJuYUpWLXNyTEpQTUNNUXpQOGEyVGlGTkpFUDhLbE8wQUdtQ29WYXVDeA?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:21:58+00:00",
+      "importance": "low",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-22d10d07bb",
+      "title": "हेलीकॉप्टर राइड से खास बनेगा चंडीगढ़ रोज फेस्टिवल: 1.32 करोड़ का बजट मंजूर, 3 दिन होंगी कई प्रतियोगिताएं - Dainik Bhaskar",
+      "summary": "हेलीकॉप्टर राइड से खास बनेगा चंडीगढ़ रोज फेस्टिवल: 1.32 करोड़ का बजट मंजूर, 3 दिन होंगी कई प्रतियोगिताएं Dainik Bhaskar",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "sports",
+      "category_label_en": "🏏 Sports",
+      "category_label_hi": "🏏 खेल",
+      "source": {
+        "id": "google_news_chd_hi_mc",
+        "name": "Dainik Bhaskar",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS013TEZ2Uk1pRjJ4MmNaTkJEMWFweXQ1SDBDaHdoTGt5TTFXazl1bExNN1J6Qjd2T1ItTnN3RmNFdmUtZUxXSWVWRTRtZENzUWYwNjdIZW4yVU1qLW0tZ2dOaHlsbnMwQ1Q0V3k0ellTcHZGY2E3U0t5X3MzUTcyRndUT0o4cEloUlFha3pyNWZTLS1kTjJfeUhmalhLcGd6YnRZNG8wT1Q1OHRJQ0RWaEtGcnFZd3Z5MnFFUXVkSEdpSFXSAcgBQVVfeXFMTW5YUy0tQVhNZVBWR1BlRF9jalpzMmdjQmZaQkFaZXZSSFhibF9MUkREMlZqbFkzdVd1RUE1MVBKc0VlOXRncVdTZ0dncko2NVNqQXZaS2hpaFpMR05SVnd5Nzl0MENWdV9IT2Q2eklYcjgtWHR6UnFxN3JQdGFkMjFEREM1Zk0tRThHSHBqekp0ajZDaXpaSlhJWDA4QktMNC10clVYbDFvdE9kdmo1eHNsXzJ0SXdVQkVIN2twcFB5RnYwdWNneFI?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:21:49+00:00",
+      "importance": "low",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-6223e371d5",
+      "title": "Chandigarh News: कयाकिंग-कैनोइंग में चंडीगढ़ यूनिवर्सिटी बनी ओवरऑल चैंपियन - Amar Ujala",
+      "summary": "Chandigarh News: कयाकिंग-कैनोइंग में चंडीगढ़ यूनिवर्सिटी बनी ओवरऑल चैंपियन Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPWkx2dHM0NUFFUHRlWldvNzZ3cU1sdG41YmVsMnZDYnN5RTRERnVYNDQzMHFjbjNZQWFZbkpkaUZ5RTBiT1RQZGxyd0RGUUFJTWczZmlYRWY0VHdXa1Vnd2E3LWJXTzBjRnhXWThQVThxX200QTNiUGVKX3pFSk5ta0Vvay1ISFdWRmtyWnFnR0d6c1BlaC1rZ2tpUlZzdUQwenZxYVhNSXR6cWRtbm13aFd6Ui1uLW05aERXRjhwRkxnQkxQd20zeU1YT3RpM3A3M19PdlFqT1VDbDZ5ZTNURERmd1d6V2o0MElR0gHwAUFVX3lxTE43OGFSZVFUNFhTUmhvTkRYZVhreDdiZEJYOVlpb05tb0hvaUd0WXdJZGctTFJkVDF1TlpWTHNvNWNsWmxiOE9nSWtFYWlsUnYxM2gtVGN1M2pJV2dWWG94azJfSWpxSlhJVjhoVXlNR1dwRlJBcEZQcFJ3eDNVTXlqOWZsNUM2VFlRZzRlZGd0a3BqYVlvQ281M0FiM0RNamxLVEw2ZDRLRThpa1ppZFhWRzBiZjNxYmw3MV9ZRDJiOENUanR5Y3I0VVJ1LXNjNWNDbnhkeEl0QjhMdG55V1hpQzBad0lQTW9vYUotbkd3cQ?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:20:45+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-5075d3679e",
+      "title": "Chandigarh News: काले कपड़े पहन कर्मचारियों ने किया रोष प्रदर्शन - Amar Ujala",
+      "summary": "Chandigarh News: काले कपड़े पहन कर्मचारियों ने किया रोष प्रदर्शन Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQU0d1ajFCTTRsRmowUlFYaE5qN3FwTmRXcXp1eEhoV2ZHNXhsazdjTWtvMEI4ZjdJM1ZkQTJHa3RKNzEwT1dfdmtIM1l3TjFEd21wX2JXVmdDZWRmbF9UV1dwZ0tDUzRjaHdlY2R6Tnpna1gxLUtMdFlJSXVEZjQ1Ym1fQm9zZ3ZxQ3JfalJOYkZTRWJKbjZvYzh0Y04tVlVZYzZPTVRQWWMyR2VmZlltVC10TS1hQUFZVDNJRTMzazFtYkhXSDJ2NUJwZmQtQXPSAdQBQVVfeXFMTWJVNlVXTFNhSUctWHY3WEE1QnU4NmYtakwxSXNTYlZpbTAxX21OUHQ4bEZPdS1ZQ3J5ajE4YWNpb1FLRXRMdkYzNUFCcnlwdkxVZWYwcXpJeHBEYlNEZWkzaE5YZFJrSXIzNHBpLXMxNjZydjFSa1dBRmR1X2FzNVVfNGV0b3htakU5SktsOXlaTWpOa19UVDZjVHpCdHFLMC03enBZbnRMYlFVb3F0V3J3d1VfT01DNEt2X3BMNGhPa0QzUE1wTjNlS0w4YXg3Qi13ZzM?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:20:17+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-f72c79bb65",
+      "title": "Chandigarh News: उद्योगों को मिलेगी ज्यादा निर्माण की छूट, एफएआर-2 के लिए मास्टर प्लान में बदलाव जरूरी - Amar Ujala",
+      "summary": "Chandigarh News: उद्योगों को मिलेगी ज्यादा निर्माण की छूट, एफएआर-2 के लिए मास्टर प्लान में बदलाव जरूरी Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNV3U4ZzNPbGpJbnBfVFhWRTFGc0dNUl9kMWJmNEdFZFQwNm1jSnZxc05QX1JJX3ItYTJXaDFxdVNWcHp1TjctVUxMWXFyUktZcFU2cjJwUUZ2VHdxTkNSaGYxZThNVmtMdUt6aENZWkNvUV9VaFNuaEVRZFVKX1hXcDJfY0R3Zzc5R0o0V1ZpUjMtNmh0eXRfelhOOGpCLXBrRnpxQXU4RGc0TkxvSDZXYnBnY3ExTmpSYzduSXBWdFp2d0Q5UDBMc1ltQlhwOGd1ZWc0aU4xaE5KeFgxMm9JeUJxR0xOem1FVmJQTnQyNmRIVXAyanMtbS16Ujl4RW8yWm1obHR4OXAzVnVUVk80WjJHTHA5T3h0S3FTaNIBogJBVV95cUxNaGMzWm5VeXB1SGJld21JLUFZLXlfS0pyMmRHRlY2WVlFOWtOdUExVTlNbGNYYzBnWGsxT0pxV2VsMjBEQTRRWUdfcjFMX0t0T0VxVm9KQkdzZWhnUV9IS0VvTC1SRzIyVmFiMG16bHAtVVE0UmFjVTFJX3lNNFFhQVRKQjZFTkdLOVJDUnFITkhFeW9rRnRlT2c4R1RRUFhMS2Z3S2JUVV9UaTMyLVB2VVZGRHJhTlFaYWVMZnA2cWwtVFEwek5zR3dvQUVFd25BRzNUMTJvQ04zazN0QnBDTG8zVWtxODdZd2cwejhkYmQtN0xtNGZOME44dUsxQkFWLUpoVklTNTN6UlZjTVcwc2VvZ1BnOFJUbGRWdGhVZF9CZw?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:19:04+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-9f5148d6f1",
+      "title": "Chandigarh News: कमल 100 रुपये का, गेंदे की माला भी 50 रुपये में... दिवाली पर फूलों के दाम में उछाल - Amar Ujala",
+      "summary": "Chandigarh News: कमल 100 रुपये का, गेंदे की माला भी 50 रुपये में... दिवाली पर फूलों के दाम में उछाल Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPQlBRVnBXaV9hUU05WHZFa1NYR2h6MWNxTkhtaEpKS2NxTXBreHJaVzlYYjN3SkJzTnhTWXVVcF93S0l3RHBSRWRHTVdpVXR1b0U3U0JRZjFjWWlRd1NjMVFhU0ptQzJJR3RhcG9FUUNEdzBBX2h0b2otbjU2aTBXUkw1dE1UeEVaV1hkUHN6bDB1c25kQmhPbHViMkRvblZLSWJZTW10WWhtVTdOWGMtRjMwYm1MUmRna1NfNTVXeElZZjJWQkN5bW5SNmhrMC0zUmpRT1pnNGdnZVBxd19wSWVLOVhsc0tad2t2NGVlWGFhZ0hXaE1HcENwMA?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:18:49+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-f5e54082b5",
+      "title": "Chandigarh News: प्रेमिका संग दिवाली पर खाना खाने जा रहे शादीशुदा युवक को घेरकर पीटा - Amar Ujala",
+      "summary": "Chandigarh News: प्रेमिका संग दिवाली पर खाना खाने जा रहे शादीशुदा युवक को घेरकर पीटा Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOVXZ3NmEyUzhYUmNmaG11UG5SeHhCSmgxT3NwTWZoV2JZOWN6aWhzYkNwZkdkUXoxWWE3T3pjSy1oT2dGQ1ZIWHZqaFlzcGVoQXoydlgwdzhrSHFpNF9PZ19FSDczZ0tleTJpZlVoTlNTejMtQS1LOGRKeTJkdk1XbGRGWmU0OElQVUdLcjFSVkFCMWw3X25GMVdoc19MWFNzcmhsUEFhWUNVMlNoSEU3Wmxyb09CZkpFYXdVdUlISGhrLTBEaXJraDNBVG9aZ3pkZ0pHWEI0QUpfWUJLUFMtRWhZMWROeEhMOUE5UHZncER5ZmQyTkVZYjdYRnRQR3dtMWdxT2oyVjVmdTljZDRYeNIBlgJBVV95cUxNYXJ6LVJzc2RlN2RDT0hlRXJBWFpsczFwWl85R0VkU1M4bDQ4TjJvNzBONVFIUW1Eem5helYzLWNvYVRtakV4QU1ET2lVeFR4TEtNbHBJTzNoTElaQkwtVWt6LThXbEN2QU4za014ZVNFSUp5bnU2dEY2dmtYMy0ya3MyNnlMREkwUkpQMWZaLUhOMzA2c1VxMnQ2b0NQMnczS1A3aU14WHcwSF9UbWRpREtlM3RaMGFDUk5TYUk5ZjJ1bGxVaDAzQ0lzZzhIeDlVc3dkRkVVRmp4cVJBTGhrdGthZzQwN3hkWk5yRHdKLXF4M204Q0dKb2J0UTZneHFGNzA4UXFOTlVKMjlKY2lVVUtIWFo0QQ?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:18:05+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-d26f61b2af",
+      "title": "Chandigarh News: दीयों की चमक, मिठाइयों की महक... खरीदारी के लिए बाजारों में उमड़ा शहर - Amar Ujala",
+      "summary": "Chandigarh News: दीयों की चमक, मिठाइयों की महक... खरीदारी के लिए बाजारों में उमड़ा शहर Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQaV9aME5UajEzUVAxSnFmejJLMjVoMGJSeHFFcHNZaThYaEJKN0VoWlJVTDB0X203bEMtZF9FenU2SmFYUDdvZ3o5S1dScURVSndncWxHY2NsU1Y5WEc0dmVmUk1nRnYzS0xmcnlib1Nhd3YteDZicUxHRG94UmZWQzRWWDFZVUd1aVpzeHYxRGE5UE9DUUg3SGdQZmI2alotWERnSlBUMlVxTWhVemtQeVN4Y21rZFpmUmlzc09OM190OEtKWjMzNmVUQUpleTEzbWRrejVqdmpDbXFONjIwU3hYOE1XLW5DNnNsbkEzTTlJQ0RXT0YtcDFR0gH_AUFVX3lxTE1MMUhhQTNHYjFVQWszZk1STXFqOFZoTnJzUXNQUlFSazcxMUpBZVNVUW9Gem45Y2hLSnRmUV80bmZfR1hRQXRkWVZQRmFSYmtlVk1OR1VCdTFick1DaXcxaHk2X2dPM0l2YlVJQWtDUVBENVJhc1Fxc2FzSDBCSVhMU25Eb2EzVjktWEtaUVl2M1YwU2NEa2poS1JJaHVvYWVkclpyNDk1WUJNY1J0d2s1dHFYQWktampRYnJjSkFzdEFaQWpzUk52bXFLaEkzck9aQ0IzZzdiaXNUSkhySWRZaWJCeUt0OGFZdE12QnExT0NwaFR1THpsNG5iTXFaOA?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:17:27+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-958992a93d",
+      "title": "Chandigarh News: दिवाली पर अपनों को दें शुद्ध हवा का उपहार - Amar Ujala",
+      "summary": "Chandigarh News: दिवाली पर अपनों को दें शुद्ध हवा का उपहार Amar Ujala",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Amar Ujala",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPcFAwQ1JJcjdjcHNjeXBMTVdMU3ZqY2t0UzlGN3Z6QzVfQzhHSm5Qa2JpTkNTa2FzMWU0dXVwazRuUzJfcUlITkYyNHl1UnZzdEdyN0FXYWx0ano4U2Ewa1lod25xQzV6Q0xZWVFpVUJEaXN4bTZMT3dQZ3Y3VDlpZFh6UmRqT0VPNnNlLW53eTBTajNGOGphSkU2MEtvT3h3eHczcXJrUVd2b1JQMFRZeXRaNFEwdjRzOWpSNmFZV0w1aENmdldWdDJVTHdDVkwzVkNoVTFpWWdDZ9IB3wFBVV95cUxNV2RreEh0NFZrOVBzVGM4b2YyR09qcEhWRE1CQTlIeldMSFlJbnVKQlkwNXR3a053bHZfazlKbnFTd2FRVFlBbE14WTJGTXhyZk1FTHlVc0xqT0hsb0tUZDhoUFlZanZ4UjFCdHNFUExoUmNUc0FrejIzQjN3Y3NQOC1ibVE3djQ4SlZLdFA1UG4xYl9wZktlM0FvdFVkbmVzMHdNVEtXZDMySUhyQXRiUUNMYnlKdlVVSTJUYi1iTm9uM21tVlZHV2lEbFZCU3ZhRTNRYzZVOHVVS0VYOC1r?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T20:17:05+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-b7900ebe6d",
+      "title": "Green crackers only, 2-hour Diwali window for Chandigarh - The Tribune",
+      "summary": "Green crackers only, 2-hour Diwali window for Chandigarh The Tribune",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_admin",
+        "name": "The Tribune",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/ht.png",
+        "color": "#2C3E50",
+        "article_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNVVdKaDlMaHJGdXJZTl9HRjlmNVRHaDZEVXc2eldDVjQ4b0FjOHBPV3ZXemhTeFBUcml3c3g2M1p6OFJLSlBGamUwSWRWNDJhTVJmMDZjcVNlTVlqX21xUmxhS1hsQTRvQTdoeVlwZzJZTkZzRXhIYnpEc2c2Q3dJandfcEoyZ0NFQmhpS1JpZXA2S0Z2Wnd4bk04ZnhzOTRCaGJpWTZReHhVdjJWMEVhSlBDaXhjeERMaXQwZF9KSnJ1akHSAcMBQVVfeXFMTVVXSmg5TGhyRnVyWU5fR0Y5ZjVUR2g2RFV3NnpXQ1Y0OG9BYzhwT1d2V3poU3hQVHJpd3N4NjNaejhSS0pQRmplMElkVjQyYU1SZjA2Y3FTZU1Zal9tcVJsYUtYbEE0b0E3aHlZcGcyWU5Gc0V4SGJ6RHNnNkN3SWp3X3BKMmdDRUJoaUtSaWVwNktGdlp3eG5NOGZ4czk0QmhiaVk2UXh4VXYyVjBFYUpQQ2l4Y3hETGl0MGRfSkpydWpB?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T19:57:25+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-5a18d42444",
+      "title": "800 cops, 42 special nakas to ensure safe Diwali in Chandigarh - The Tribune",
+      "summary": "800 cops, 42 special nakas to ensure safe Diwali in Chandigarh The Tribune",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_police",
+        "name": "The Tribune",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/ie.png",
+        "color": "#E43131",
+        "article_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMzBob0wySG1zb1RVel9CQTg5a0tHUWZPcHNlYjR6Y1prMnhnRlpuQWJUNF9tamhadTV6bG1iYU5NaXFlWnYyRFBKaXNqWVhDajhqYkZhR0pEdzl5a0tzWWlyNUo2TEZRb3ZxM3pLOHVKQmNSa0tRUzZtLVozSmg2cUZUNEVSaDhQQV8tMTBUOTlyM1Q3WlplcE81Y01CS1NSSlM0V2JJTUJXcVJ4ekk00gGvAUFVX3lxTE4zMGhvTDJIbXNvVFV6X0JBODlrS0dRZk9wc2ViNHpjWmsyeGdGWm5BYlQ0X21qaFp1NXpsbWJhTk1pcWVadjJEUEppc2pZWENqOGpiRmFHSkR3OXlrS3NZaXI1SjZMRlFvdnEzeks4dUpCY1JrS1FTNm0tWjNKaDZxRlQ0RVJoOFBBXy0xMFQ5OXIzVDdaWmVwTzVjTUJLU1JKUzRXYklNQldxUnh6STQ?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T19:40:48+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-a2e6b5adc6",
+      "title": "Chandigarh markets sparkle with festive fervour, traffic goes for a toss - The Tribune",
+      "summary": "Chandigarh markets sparkle with festive fervour, traffic goes for a toss The Tribune",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
         "id": "google_news_chd_wire",
         "name": "The Tribune",
         "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
         "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRGpBQ0N6Uk4ydkVqTk5WRHVGV2J1TkNiU3VONXVsSk10N0ZPMldLNTJlSHQwTHZNMjFmZEVHT0EtX2x0blhDb2VodThNMjM2UnY3OWl4amNiTTR1RkZXeENFU0sxaUFjTVJMWE9uNVp2NmNxclZMTmUyMTctbTVSZTg2QTIwYXkxTzZPZExKTHY4cUIxcnfSAZoBQVVfeXFMTTJXLXp5T2gtN2hZOFRpal9RRXgweS1fS0ctdVFYeTczWlF3SmRpUVhUbW5RdjNuZHpvVU1mRkhaLUV6c01keUU5T3R4LTZBdjVwS2FNa1JzRG95OXpkSVhWSUJtUGlIclg1c2Z4UFpvNTNraE5xY3BNR05uanUzVXFadWM4cmpLRlJiMURBRXFMZ0RZZE82U3dmUQ?oc=5",
+        "article_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPdVRYQ0FIWC15ZjA0SW1CQnkyaHZzc3ZCbE9wdnoxdDN3TC02amtZZVduaWR4WjktVFl3ZzZCTVd5SEh0T2N1aFBwUDBHc3kxUV9WSk85OVAzRlMyVnNvZ1QxdG15WE05QXhadW5YTHN4LUwtcmZ2TVF4dkF4Wm1jT1paZHhtUWx1OHlmUjZsNVJSX0pqaFRKbUNaVk5aZVN0bEVPOGFMbXlORXhSWlJNNU9B0gG2AUFVX3lxTFB3ajdWT2xpYmF0X2NRNklrWW1TZFZLWlNUYW94RDdKLVdwS0dIMmw2SzJ6ZmRpc2JINEpOa3A3V3pjYWM5STNiUHNuanR1cEt2M003QXZaSmxaT0FtdlphUHNQbUpOMjdJNnVocS0yUzRXTFlRZDRMN3A1ZnZVQlhqS0F5OFR0R0RYR0RDZ2Q3WUxQV2xRdVczV214Y3c0MUZUYkRaTFV0NGk5cnNYeV9seXJTSDBB?oc=5",
         "language": "en",
         "tier": 1
       },
-      "published_at": "2026-11-06T20:02:04+00:00",
+      "published_at": "2026-11-07T19:39:48+00:00",
       "importance": "medium",
-      "hyperlocal_score": 30
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-6a035332d3",
+      "title": "With 61k plaints, current flows fine but tempers short-circuit in Chandigarh - The Times of India",
+      "summary": "With 61k plaints, current flows fine but tempers short-circuit in Chandigarh The Times of India",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "The Times of India",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOQlktRmNzdlRRWkpaOEN1TVdZTXZ3bHpLcWREQlVqUlFmb0k1aWptbUlNLV9kQXlITXRNZllKekFCSVk1bjhsTFRuWGRzRkUySGczNm1Xc1hKcW5JR0tCcFotNFlwSlRuclY2YXNfXzNwWldzRzlnYi1IbWZqVk9sbm0xRWV3blhiTFNFcEl6dGlDSDM5N1pYZXNIQTFTU01jN3FIaTJiTllfNTlEVUYtTjRYUVFadFFPVWsxX3prQlpMQjE5dkliU1kwYlMxc01yUjRQOFliZ1VTeHRDZncyQkRLdXVxakRH0gHuAUFVX3lxTE5HR2EtZURFak9yLU0tV1lqRGkxa09yY2h1Q3BQU25hWHZqd0ZYS0J1WW5zaGlMT3l2bzZ2QXlBU281TExFVDNOMUw2SS1wRUFreFoycUVjVjNLSFV6R3BHek1jaGVCZmN5SlRmcFJIa0o2eG1VZFNkZFltczRmMDdWSEpjX2J0RTVQbTd1LW5rZ3BLY0hSTDVmWlJiWFdCbi1zWU9ObWM0SDluN3hZX010dG53U0dDUEZxSUtuSEdaMVRVOXNFUldNMXE5Ynd0NTBBMUs0VWY4dHF3NnVDZVBpcXc1ZnplVU0xVVJ6bmc?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T19:38:00+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-ea42b91e3e",
+      "title": "Festive spending lifts Chandigarh GST revenue to Rs 254 crore - The Tribune",
+      "summary": "Festive spending lifts Chandigarh GST revenue to Rs 254 crore The Tribune",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "The Tribune",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNQXZhaHAza1JySEhPam9uU0xYaVlYaWtvUndCb3ViYlB2Znh1SFZicFNIODRUZlhmaTBlbWZaWWdhcmh0d1hQV3dCRWI1clJQSGNQd09XN2x5dHFHS21GaGwydk1YejhNbkQ4QW5XazdTU3BJX0dPLUdMRkF3aXJuNF90RVBsQkNIM1pUcm82WW1PN2lvaXFxY1Bnd0FjLW9xVDdGRzF3SdIBqwFBVV95cUxNbEFNWVdhRzFGYUNRVzVqd1RmWVhCYU5RdkplYzV3REg1c2s3LS11Y2g2amp3UXBDY3lJTHQ3Nk1USFhYVl9GT0NVdXdlOHZzUDRYOThvdmgwaDF5SE9hdUtKNWlseVNXZ1liTUhmSm15NHBVTXo3a3E3V3VPM3pRMzIxSk0tc3FLU21oSl9YMWlmaGVZRFdoWWlfc0phZ3hvMVhtcWJrcTJWV1k?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T19:34:51+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
     },
     {
       "id": "chd-ccaf7c541b",
@@ -657,6 +1203,48 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-a6e8ab8996",
+      "title": "Chandigarh U19 W vs Uttarakhand U19 W at Puducherry, Women's U19 One Day Trophy Elite, 8 Jan 2027 - BCCI",
+      "summary": "Chandigarh U19 W vs Uttarakhand U19 W at Puducherry, Women's U19 One Day Trophy Elite, 8 Jan 2027 BCCI",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "BCCI",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZXlzdzB2VnpKVEFUVVN6R0E1RllRRGhDQzdab0pxZEJDVFRFcTg3WFFaR3kwOWhsdWJSWWg0LWNLVzZIcWpBZTMxdm9hMUNJcUVIbFNHc0RUcHk5enEwODdqU0U0TlBWcFNzb3BzdktPSXN2TnRNWV96cjJVTkxpWTAya25sZGRuTG9La19DdldtNW9vdnBicTRzOFdjZGZWelZYdGFrTEpnaGZwR1pjTHN4ZkZ1RkVSd29HM2tB?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T18:57:17+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-13adb5de54",
+      "title": "चंडीगढ़ में डुकाटी Desmo450 MX Factory क़ीमत - नवंबर 2026 चंडीगढ़ में Desmo450 MX Factory की ऑन रोड क़ीमत - BikeWale",
+      "summary": "चंडीगढ़ में डुकाटी Desmo450 MX Factory क़ीमत - नवंबर 2026 चंडीगढ़ में Desmo450 MX Factory की ऑन रोड क़ीमत BikeWale",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "BikeWale",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV1lIWkFSMjNTQ1V0M0hVRjZGUFpJRmJ2bHNMMVZrOTc5YWlRSWxfS1JobVIxUGVOd2RvRVNDYUM5Ni14RzVpUk5BSmVuUU9vc01COGxVQV82SVNNNWItTU5sZGJCcFZzLWM3dXZUcTBrdU82RXZCYW9HaF9mUHZnWDEzZ2xHa09N?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T18:32:28+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-67edb4775f",
       "title": "Chandigarh: GGDSD, MCM college teams win tennis titles - The Tribune",
       "summary": "Chandigarh: GGDSD, MCM college teams win tennis titles The Tribune",
@@ -717,6 +1305,27 @@
       },
       "published_at": "2026-11-07T17:57:42+00:00",
       "importance": "low",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-1e131171e3",
+      "title": "Chandigarh - News On AIR",
+      "summary": "Chandigarh News On AIR",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "News On AIR",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1RRV9BOWdFY1hqRWtNbDd1WkpmSmluaGZjdzY2MEM1UW90dzZod2xEak5YRzdHVWsyY0owOGZMSW90eXBoUzBrMVpibkNJTU1POFRJSzZYMWctUEo3VHVtNXEtcTladDc0VlN0aw?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T17:07:28+00:00",
+      "importance": "medium",
       "hyperlocal_score": 10
     },
     {
@@ -863,6 +1472,48 @@
         "tier": 1
       },
       "published_at": "2026-11-07T14:57:38+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-9b0943e801",
+      "title": "पंजाब-चंडीगढ़ में आज बारिश के आसार, बदलेगा मौसम का मिजाज: 12 जिलों में आंधी-बारिश की चेतावनी, तापमान 2 डिग्... - Dainik Bhaskar",
+      "summary": "पंजाब-चंडीगढ़ में आज बारिश के आसार, बदलेगा मौसम का मिजाज: 12 जिलों में आंधी-बारिश की चेतावनी, तापमान 2 डिग्... Dainik Bhaskar",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Dainik Bhaskar",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPb25TSDhMWnRhMGd0eUY5Sy1weHItVTF2R3A2YjJwREhrOHN2VjNfSDZ1M0IxRVJyU0ktS1pwR1VBYTA0NjEtdzl6bGJnYmlRNlJKUXNkWTMtSk5wcVFpam5yeE9IaUJ2YnlieWthVFZ1alctREViTTNSYWtDcG5VaTNyZHVmTEgyVHl1ZTVhUzJoei1vVFZ1a1lDNHVzVXRWSEZsTmFXb25rSVhQLTRyeEpkZjFSY2d2eFg4YVBTVUo2anpB0gHKAUFVX3lxTFBLRnNUb0cyc1FrcDZ2R19nWHJEMmc2US14RGNVSHd2QmNzRTd5bkZUaWdHb2U4OWJ2QlNFOHV3VjQ3YlY4S0xiRkRSTVlFTFBhalJpTy13S3dNY3hrZXNOMmdQeXhkbVhGdHdtZ2YzdFVfNjUya2ZGbDhZWkpsTnVhYU1fRFBuaXZZcm1Wdm9RX1I1dXgyLWNhc3RPRFFPOFc3V3FybEN4YzdSdG5QRmdaRVQyTE8xNFo5NE1ESDgxLWgxT0JwQWtkQ2c?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T14:35:57+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
+      "id": "chd-406f1213f1",
+      "title": "चैंपियनशिप में पंजाब यूनिवर्सिटी चंडीगढ़ की टीम रही विजेता - Dainik Bhaskar",
+      "summary": "चैंपियनशिप में पंजाब यूनिवर्सिटी चंडीगढ़ की टीम रही विजेता Dainik Bhaskar",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_hi_wire",
+        "name": "Dainik Bhaskar",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
+        "color": "#DD0000",
+        "article_url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQYmxzU1lEeG04T0VoMzh5TFlwOUtsSS13ZGszWUhOWUd4cTZmSFkwSkVrdFNibk1MM3lFQXFQMW9mdVlJT0FtN2J4Z3pvcnNoSkRuTTM3VExvT2VKVE5rdXJqM013SXJiMXdQVGZIVE9zWk1FMEpWSW9fS2I1b01Gci1DTXlvS1E5LUJUMU5Sa2pzRlVMVlFia1AzbUJyTVlVVFhpYzFEUEdHUXFuTXdaY1g4ZndJSEw5WlRpQmlGSVBqNUFJbFBNaXJDdlAxNzdublpZ0gHYAUFVX3lxTFBoNHBSZkgtRWk4cVJyTnR1SXBRemR4T1hFWkNoRmVnbFQ2eFVuY3FIZzBsU1RXVDV0eGxOX2hrVlo5aGh1OFQtUEx0V3lYTjVJdVRGUDZLemlnQUw0b2k5dUw5eEhoME5oUERGVG54XzRrUlBrbElIM2FMU1NrU2JDQXc1NXQwTmRhYW9JaGh3d194QXlXY2FXWTh6bmtJZFZMY0IteXNOcTVNY01pMHJIRnJkODRLbTJyeDQtMEFLZU1wZzB4am9WUHNmd1o0YUpSZjVpa3I1LQ?oc=5",
+        "language": "hi",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T14:29:55+00:00",
       "importance": "medium",
       "hyperlocal_score": 10
     },
@@ -1182,6 +1833,27 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-05deba2db0",
+      "title": "Odisha Under-16s vs Chandigarh Under-16s at Shivamogga, Vijay Merchant Trophy Elite, 30 Nov-2 Dec 2026 - BCCI",
+      "summary": "Odisha Under-16s vs Chandigarh Under-16s at Shivamogga, Vijay Merchant Trophy Elite, 30 Nov-2 Dec 2026 BCCI",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "BCCI",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOWNHcVNZU0ZIU09rVzYxVTlYLXpKMmJ6eFJMVUFSVXVycDBWMXNJblBDVDl1enVEQzh5VzFGVi15NnVPb3diczhoZTdhajZDOGktMjZSaXVDMk9UT1o3Y3ZOWE90cnJoMDZhcVMyX3QxbWJCZHcxNFdwWGRFMjdGbTJscVZESFFwekV3cDR4TXRaTVMt?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T11:53:35+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-b7a94709a0",
       "title": "चंडीगढ़ में दिवाली स्टॉल की फर्जी पर्चियां बनाकर वसूली: कमिश्नर के निर्देश पर निगम ने करवाई FIR; अब बाजारों ... - Dainik Bhaskar",
       "summary": "चंडीगढ़ में दिवाली स्टॉल की फर्जी पर्चियां बनाकर वसूली: कमिश्नर के निर्देश पर निगम ने करवाई FIR; अब बाजारों ... Dainik Bhaskar",
@@ -1266,6 +1938,27 @@
       "hyperlocal_score": 10
     },
     {
+      "id": "chd-1eac8bedd9",
+      "title": "Chandigarh U15 W vs Karnataka Under-15s at Vadodara, Women's U15 One Day Trophy Elite, 13 Jan 2027 - BCCI",
+      "summary": "Chandigarh U15 W vs Karnataka Under-15s at Vadodara, Women's U15 One Day Trophy Elite, 13 Jan 2027 BCCI",
+      "sector_tag": "CHANDIGARH",
+      "category_id": "governance",
+      "category_label_en": "🏛️ Civic",
+      "category_label_hi": "🏛️ प्रशासन",
+      "source": {
+        "id": "google_news_chd_wire",
+        "name": "BCCI",
+        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
+        "color": "#0047AB",
+        "article_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQjRrQVdXR0FxMTd5WGp2ckR5dHdLazV2MHFIT3hRSmkxcEhwVVNZUzFvTGdGTEJheFZDT001T1U0R2E2MjQ3cmx3Qk82ZnJqVDhuMlNZYWRPQTNFRm1BbGE4d3hNY3VQUUszQkVxcmR1akRJMEpkNXFkNVA0WmFFQTl6ZG1FUzRINGF4YUdqc2xZbHVFeUR1cGk1RHRnSkZJYmo1WTdJcTVhdVYwZDNMYw?oc=5",
+        "language": "en",
+        "tier": 1
+      },
+      "published_at": "2026-11-07T11:17:10+00:00",
+      "importance": "medium",
+      "hyperlocal_score": 10
+    },
+    {
       "id": "chd-a418954da0",
       "title": "चरस के साथ पकड़ा युवक चंडीगढ़ कोर्ट में बोला-गलत संगत में पड़ गया था, जज ने सुधरने का दिया मौका - Jagran",
       "summary": "चरस के साथ पकड़ा युवक चंडीगढ़ कोर्ट में बोला-गलत संगत में पड़ गया था, जज ने सुधरने का दिया मौका Jagran",
@@ -1283,27 +1976,6 @@
         "tier": 1
       },
       "published_at": "2026-11-07T11:00:00+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-646a6be54d",
-      "title": "Acharya Satvinder Ji Congratulates Gurjant Singh Malhi on His Appointment as Chairman of AAPs ASAP Core Committee, Chandigarh - Loktej English",
-      "summary": "Acharya Satvinder Ji Congratulates Gurjant Singh Malhi on His Appointment as Chairman of AAPs ASAP Core Committee, Chandigarh Loktej English",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "Loktej English",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPeHpFTUkwZWhWMWFia00weGVSb2djSEFENGd3UllIT0VBVWREOEVaMWZhdmJRT1JkRVVpaVBJeGh6bXJpaTRYMmt4Z1RHZUJMaG1MSUVOdEI4ZmJjUkwyWUxXallLWXRjSTJVU3FIYXBNS1IxNzU3U2dSMVQ4RTJ5emhCNUoxcFVwczNhbFR2eFA1WGJwQ3dOZXZXNUNXTVFFLXltWlZKSWdKazJxcHFjdzg1ZU1Sam9nZExYaUI4S0k1bjhoMFdCWGtzZ3BEcXh6R0VnNmM2bW1nN20wR3prSDBYZ3RqT1llQ3RkQkZWRXpkc1pfemVDTnM5X2pUUzM3SVBPYkh3?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T10:30:38+00:00",
       "importance": "medium",
       "hyperlocal_score": 10
     },
@@ -1851,678 +2523,6 @@
       },
       "published_at": "2026-11-07T07:32:48+00:00",
       "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-8339acb54d",
-      "title": "Centre Extends Punjab Prison Law To Chandigarh, Introduces New Rules For Prisoner Transfers And Security - Daily Excelsior",
-      "summary": "Centre Extends Punjab Prison Law To Chandigarh, Introduces New Rules For Prisoner Transfers And Security Daily Excelsior",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "Daily Excelsior",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQX0NjQ18yR2VBZENfWmc3SHdOVldMUzFIejhXVWs2b1FvWVZCTThHakN4YzhQLTc0Qk9kSHVIVm5CTHRHczk4R3B2eVN4T2g2Sl9NNXZic09TNHJOeWpVMEFHLUdFdnp5X1B1VGZ2ZEVqU0UyT2JwRW1GWG92XzZPcUtwZGxWWE5fNFdVcmFpV2p4eUp3dEUtcnd2bHMtdVR6bDdDNDhXS2NGdG5HTWhBUVZhRlQ0XzlIZjJXeldXN1JtLXBVYkFieUdsSkJ1MDRu0gHUAUFVX3lxTE9NWUNqTUgyQ19zZDVWVjFMVnNOUU1OeEIzaExIcHQyMktOSTQxLVJFWXpKOTM2bmhuVGlBV2JucFEtVVlQNU9EWnN0X1hhdy01ZllxYjdfeE5OYk9LLTBOT0psM1JpTmtEUUJmMmVvNGtfdG82Tm1Cb1IzYVJ3LTdOSnNzTzFqWEhZeVBieHBGd1dzUTFtVzdoVjdpUm96Q3ltQ21uNFNrTHhlWjlQUlk1VlBZNmkxdng4eEs2cDRRaXQzOVhQZThpZXdnUUNJLXdCaWdG?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T07:26:32+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-e723b813f9",
-      "title": "दीपावली पर घर जाने वालों के लिए HRTC की 89 स्पेशल बसें, चंडीगढ़- पठानकोट जैसे कई शहरों से हो रहा संचालन - Jagran",
-      "summary": "दीपावली पर घर जाने वालों के लिए HRTC की 89 स्पेशल बसें, चंडीगढ़- पठानकोट जैसे कई शहरों से हो रहा संचालन Jagran",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Jagran",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNNWFoQzFaUnVEZE9JYTBiV29Ta1hkVUZIRFRyTXhLVkR3UTEtZ0ZUQVpaek4xRnlaeEJ4Z2dPeUFQSS1TOVFkSW1IUmw5YUlLTXc3YWJPMVpZMlc2c3B6VFV6eG0zeUh0bkJQLWpBcUpLb0hxVnFVaC00QmpoSEtuRElocHRCSXRIQVZkY0VCMVRnZzV2c3pLNzZYQTBPcWkyWm5oeE9vRXc5ay1YNkhvV2hMMFB5VS14bTlTY092TU9nRmJWVWhhekNR?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T07:07:00+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-509bf10520",
-      "title": "HRTC to run 132 extra buses from Delhi, Chandigarh and Baddi for Diwali Rush - Punjab Newsline",
-      "summary": "HRTC to run 132 extra buses from Delhi, Chandigarh and Baddi for Diwali Rush Punjab Newsline",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "Punjab Newsline",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQ3lLX2ozOUIyX19ZYUdVMFhMN1R1SEl3SG5QdkI5RGtGUjJuVFVpNmlONkZBV2IyTWJZVjVYck9nbFNtbVVXQjJvN3dFaDhhbHRlSnNMV3Q5d0QzRVZuRndLeXpkbGkxRWtXN3A2c2x3M0JfRDYyamdWYU9rNjVsSE16U1lHclFoNXo1NXhTN3Vua3luTUFlLUw2b2JMdXFpR0plZlFYNEdGNjg?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T06:17:59+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-e64054b1b9",
-      "title": "चंडीगढ़ की विरासत विदेशों में हो रही नीलाम: प्रशासन ने रोकने के लिए बनाया नया सिस्टम, ऑक्शन हाउस पर नजर रखे... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ की विरासत विदेशों में हो रही नीलाम: प्रशासन ने रोकने के लिए बनाया नया सिस्टम, ऑक्शन हाउस पर नजर रखे... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_admin",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#FF6200",
-        "article_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX0VHQ1lDS0hVTDJ2eHZ2cV84WmVOam1XUmFOdmtZbV82c3ZDM2RScG90cG9VeFJKbnBYNTNBM0QwOUtDT0llV1RJamVsbzZPRm1ZaVRaNjg5Mk9RTFVvOWRoeFhTLUcydE4tdnJCUGF2eG1VUWxHenh4ZllIMU42ZEJBT25VOHE2ckxWQkhRb3dqbktUcXhwMVdPbWZTVGtXTTQzRXB5NXNhRkZGWXZaRmxBM1FQeWhwWFUtTERrU1DSAcYBQVVfeXFMTmx1YWlQeVJ3d3NQQzdHTmdFNVQ0Q2VESWowYUpyMkJFaDVuMGdlSW5McHRRVzZ0bE5TR0kzUlpqTUlXZkRrd2w5Uk5sT0tuV0lnSVlzT2dIUllXVWdsY2xlUVQwaTdkTFU2RnZudzJyejJtTTZVM3JWcEgxczZJN2NmMG8wOW83cTJKakdobnhKWGZqcVlxSVRqakZHYXU3Z3B6RXBSTmVYbWt5QkV6dEtQNm02ZEhYUmp0bk9zVFR4ZURoNlJ3?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T05:48:35+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-f0a070ec74",
-      "title": "Past medical history cant be treated as pre-existing disease without evidence: Chandigarh consumer commission - The Tribune",
-      "summary": "Past medical history cant be treated as pre-existing disease without evidence: Chandigarh consumer commission The Tribune",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "The Tribune",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNNGhZal9Zc0NReFFsN21GOHFjRjBxWGNYT1hlTzVVcFFUeDExSUhGbFZFU3U4YjJNWjd3R1FuRUF4NDl5ZVQ0ZG5wbkI1eWhYLUhvWDdXUEJsbTF2bzlnWmx6T00wemltdTFWZ0xlbHFMTEc4Z1d0WE5zRERaelpmakp5bHZoS0hSMEJ1eFAzbTB1S1MwaEptcEtwTmQtZC1CVjVuMWVpZEExcTVINHdCcTBBVGF3S1Z5RXktWmRhSXYtU2hGbVA4bXpBZkR6NnBJVDRFOWJpcklFZElBNEQ2SDB6aVU2d1NjTGfSAe4BQVVfeXFMTlBGQS1uQlFMRm5GSUVBdjJ2OUp6dXVSMnR1T1VzY2pHZHctLXNDZ0NpZS1oVEdOaXdkYk1pU3FiSTlGVFNGVGRfSlFzakpiZzNpRDZYc3BTT09KN0VLc05MQm5iUHhCajFSN3pRLU9oQjNXelJ3Q0RKZ2t2QUJlUk9rTjk1VVlWOUJsY1JfNTNBOGo2d0RuaUlxRHUwZjFvYUk4b09HaEZGOXl0MnpYaVFlREN4T0NrbHhzWl9iUExLRVZtYnJ3WWtXYWQ2V0VYTEVRYUZTUTlHUHBXVHZVOVJDa0RsUGJvSkswdXRwUQ?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T05:46:22+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-424b2fd80c",
-      "title": "Manipur Under-23s vs Bihar Under-23s at Chandigarh, Men's U23 State A Trophy Plate T20, 7 Dec 2026 - BCCI",
-      "summary": "Manipur Under-23s vs Bihar Under-23s at Chandigarh, Men's U23 State A Trophy Plate T20, 7 Dec 2026 BCCI",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_sectors",
-        "name": "BCCI",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOZkFhSlczRW1fVlZDS0lpWGFFM01Cdms0VWI1d3NJaFVUa29CQjFIQ2JfYzRvdHBuMFl6Z1Y1eElqYWx0anV6ZWEtdkU5SjV0dk9MeFFOaTZaaUxPY0NRN0FNQkRJeHJERnpOR0FOYzdpUnI2dXdja2lYMEZkLWdHU2NkQ2d2WG5TbldfRlJObnB5d1p5eHYwdjdTcnQ3U3NGdkZmYXF2dWNCUQ?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T05:36:01+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-43533bf0d6",
-      "title": "Chandigarh Pensioners Lose Nearly Rs 8 Crore To Digital Arrest Scams In 2026 - News Mobile",
-      "summary": "Chandigarh Pensioners Lose Nearly Rs 8 Crore To Digital Arrest Scams In 2026 News Mobile",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "News Mobile",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQm83ckR2cC1XUG9ESk5DMVZLa285S2xSMzg4WmlEQ1NPMVU2UFNhQTN4eVBMOVE2a0d3c3dua0N2QzlNQ0RRdGhtUW5EUUJESzFCdHBkeUwyaDNoRlYwOWVFM2syYVlvRTQ0d21FbFNvRmp2TExuVVZSUi1jZFU0QmVScUNZYTRPT3FLMkgzV2pNT21ET1F5SFV4ZDhwREhaQzNtcllYSk84NlZMbFJJdEdScXQ0Z2RPTnc?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T05:09:54+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-19aaa4bbd5",
-      "title": "दिवाली के लिए सुविधा: आज दिल्ली, चंडीगढ़ और बद्दी से 132 स्पेशल बसें चलाने की योजना - Amar Ujala",
-      "summary": "दिवाली के लिए सुविधा: आज दिल्ली, चंडीगढ़ और बद्दी से 132 स्पेशल बसें चलाने की योजना Amar Ujala",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPeGNxdUF0RFFrOHBNUUJnRUhQRF9feG9zcXc2SWJ3bTF1bHVQZlk4cmJmaTFDb251ZEI0Tm5rTlZSRG4zRFRoNUZ0Rmg3dUFEZjZfQXR1T1JJSXlfTGRSWFlBQ3BpcEFhUmlDTWdHQjRqRGFocnF0dy1TVk0tMnhuQTlsaGdXLWVYYVAxY2h2SENxQUlHTmNhZ3dISDhlc2FndVdTTFZhYnUxTUFxZEdNYzNKWGxsWUJMTWFXSk9YUlpjWGpkU1BidE5pNXM4T2UwRGFSSVo3Z2FIakZrTm5zcmhqa9IB6AFBVV95cUxQNFdmN09ROUlHZl9QTXM0ZHdaRnotWUpFRDVrYTBZSzhDVVREWFpjN3VlVUt4ajhMcGJTTTQxNEUyWUhzMFg2aTBCNGVud2JMZE90YW9saGdQMV9KdjlGb081dHJMaGh3aTRfVjhYaDdHakJxOEpFRTV0OHpvdEgxU3pJRWtMYUtrWk9HNFB3QUNEZXB0QWdHN3Z2UWFnMzYtcDdyR3AxYTIyLTJnT1ZkNkJVV2ZsSl9JczFuTDBUZ0tsSG00anR2djNJblJrLUIxbXpHalZSb0F0eEFOMF8xb2R1d0xDR1Z2?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T04:56:06+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-3ec277665e",
-      "title": "चंडीगढ़ में CHB की 91 प्रोपर्टीज को मिले 2 खरीदार: 79 कॉमर्शियल प्रॉपर्टी की कोई बोली नहीं, लगातार दूसरी बा... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ में CHB की 91 प्रोपर्टीज को मिले 2 खरीदार: 79 कॉमर्शियल प्रॉपर्टी की कोई बोली नहीं, लगातार दूसरी बा... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNY0t1LXNjV3hMeDJRaEllYmJZWW92bnpTTnlhZmZnb2x5REFLQVVTd3RyYUlUaFhWSVpCUHA0RUZhWk5aaG9aamlUaHBJekpob0hxOEdVSU9WVDNJbkl4cnRMUmp2Tk41OGxHRnl6b3NGMkFXYVhIdVNpc1JIcTA2QWE0X2t3T3lwUHpUY3p0ZHYtaFlnWWdtS3FLeU1ONExNaTdnZlVURDUzNGJ5bjNTVDZJc2VOM1BjOXJxcdIBwgFBVV95cUxPRlJmUk1lUkxMWmZNNWNWVHhWT3VXOG5xam1PV2tsVDRtMGY1MmdFXzJKdzFSWEx2OEcyTXRQVWxlMF8tR3BZaW9UQnQ3SU9CRVNKUUNpYnBEWmg0Q3o5RzlqeFNtTjNXSE9Zb1A2VjJiNkZXNVgxSEtkbDAxNTAtLWRIZDk0eG1xVmJQYzdMN0x2ZEJTZjRBM0lHZ1Rxb2ptdmNtRjNUajM3anYyaDVnVGoxLURxR3NPSHRGVFJaZHFIZw?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T04:56:00+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-63872178fa",
-      "title": "पंजाब-चंडीगढ़ दिनभर,10 बड़ी खबरें: महिला डॉक्टर जिंदा जली; PCS के मेन्स रिजल्ट पर विवाद; दुल्हन बारात का इंतज... - Dainik Bhaskar",
-      "summary": "पंजाब-चंडीगढ़ दिनभर,10 बड़ी खबरें: महिला डॉक्टर जिंदा जली; PCS के मेन्स रिजल्ट पर विवाद; दुल्हन बारात का इंतज... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNR1lMaTgtektTZGJZZmNQTlFmaWtRTGYxdTdKTTljdVpfZnVqRzl1Q2pZWE9oUlV3cDhMSTVpVm5NZmh1STFhWEdReWp0Z2txRDAteTJJbnFpUDk3azJGYUR3a1BIZUprOGI2LWt1ZVJ5V0ZpMW0wc2dPbTM0a2oxU0dvZWpKMkxCbFlBbXkweXM0WDBKbmxsMExXdTZKVGNHVDlERU1XU1FUU1Q2NmJuRUE2Sk1qNVhxYTgzetIBwgFBVV95cUxOR3R3X0w3eXUwTUJpdEttLURUZHJESDhxSzBGUDd2RkJPM0xoaklBT0lXT2xEM3lDa1pIZUxYbU5acXNldXZGWkVzazZLdjZKQzRldjZYUXNYNWdERTloTmZGblliNXhpQWlHV09OUzhvTlFfRzd6YW1LalJTeUIzRVM4XzEzaTNsYXVscVUtc3ZQZm5CeEUtRGV4Wnhwc2RpRmtJMGhlSC0wZVZ0WW92VlhWMS1mcDdkQ1AzaDMzTzk2Zw?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T04:50:54+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-22d10d07bb",
-      "title": "हेलीकॉप्टर राइड से खास बनेगा चंडीगढ़ रोज फेस्टिवल: 1.32 करोड़ का बजट मंजूर, 3 दिन होंगी कई प्रतियोगिताएं - Dainik Bhaskar",
-      "summary": "हेलीकॉप्टर राइड से खास बनेगा चंडीगढ़ रोज फेस्टिवल: 1.32 करोड़ का बजट मंजूर, 3 दिन होंगी कई प्रतियोगिताएं Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "sports",
-      "category_label_en": "🏏 Sports",
-      "category_label_hi": "🏏 खेल",
-      "source": {
-        "id": "google_news_chd_hi_mc",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOS013TEZ2Uk1pRjJ4MmNaTkJEMWFweXQ1SDBDaHdoTGt5TTFXazl1bExNN1J6Qjd2T1ItTnN3RmNFdmUtZUxXSWVWRTRtZENzUWYwNjdIZW4yVU1qLW0tZ2dOaHlsbnMwQ1Q0V3k0ellTcHZGY2E3U0t5X3MzUTcyRndUT0o4cEloUlFha3pyNWZTLS1kTjJfeUhmalhLcGd6YnRZNG8wT1Q1OHRJQ0RWaEtGcnFZd3Z5MnFFUXVkSEdpSFXSAcgBQVVfeXFMTW5YUy0tQVhNZVBWR1BlRF9jalpzMmdjQmZaQkFaZXZSSFhibF9MUkREMlZqbFkzdVd1RUE1MVBKc0VlOXRncVdTZ0dncko2NVNqQXZaS2hpaFpMR05SVnd5Nzl0MENWdV9IT2Q2eklYcjgtWHR6UnFxN3JQdGFkMjFEREM1Zk0tRThHSHBqekp0ajZDaXpaSlhJWDA4QktMNC10clVYbDFvdE9kdmo1eHNsXzJ0SXdVQkVIN2twcFB5RnYwdWNneFI?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T04:13:34+00:00",
-      "importance": "low",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-25c9c3df7d",
-      "title": "चंडीगढ़ में अतिक्रमण की शिकायत वॉट्सएप पर कर सकेंगे: फोटो-लोकेशन भेजते ही निगम को मिलेगी सूचना; त्योहारी सी... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ में अतिक्रमण की शिकायत वॉट्सएप पर कर सकेंगे: फोटो-लोकेशन भेजते ही निगम को मिलेगी सूचना; त्योहारी सी... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_mc",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVVJ1dkdSY3FIVmVpRnB1VllVT2JPN0o1M3RvelhOTlkzN1FrZU1nUVFCU0NGWDJ2czFKQzl1TmdGblJHTjMzMlhUOXJtWUsyQ1M3bDE5MUZRUjlEYkQzdmMzRl9MVkpSUUc3NlMwS0tFSXRMODJRb2VJNXVXOFFUSlppa2trSUFreElBZVdubklzMVhvUlM4dG5OaWdpV2JiQXZhUDJIMXVHR0Q3WEM1TlFZVzQ1T2pfR0NBUHNRQdIBxAFBVV95cUxNV0g2LWpCUnhrZzhocjBrUkdNM2paTzhZU3pIWHZ5Rl9tZ3NxSFhKcTdMZjNURHRSMF9vVWktRS1GN2pqV2Z1bTlSSlBYQnkzQVBRUjktOUxzY3JXNGVHWnZ1RFhlVjB6dGxUMEpJc3d0a3FSRUZ2ZWx0YzgxNmhRTDhmekEyZTdUSGdBRThOUEJ2SE52LWpZbzQ1bHl1LVBRMVAtcm9RQXdsbFhta2dUT29sTXNFNzdsRklMOFNxbmZ2dHlZ?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T03:52:39+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-746901b9c8",
-      "title": "7 दिसंबर को चंडीगढ़ में किसान लगाएंगे पक्का मोर्चा: तरनतारन के गुरुद्वारा में हुई बैठक, व्यापार समझौते-लैंड... - Dainik Bhaskar",
-      "summary": "7 दिसंबर को चंडीगढ़ में किसान लगाएंगे पक्का मोर्चा: तरनतारन के गुरुद्वारा में हुई बैठक, व्यापार समझौते-लैंड... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd2lDd01Cal9IVDhQeXpyelNGY0U0ODRBTndUaE9jV01pblpfdlF5SUhHcWZFblFsUDctbmYtQ05Zd18tMDB5RkVDd3BNal92TUZCWmNXN19BUlhaR1Q4b2FabEFUeEJ2bVpVLXIyel9XVUZKTW5Pcnd4Zk5aY3hVanZUbVJLbDhFNTA4YThuT0tkYlI3dzRGZkN2Ry0zMjRmSFdPQXRhYVp3bEE4MFBVT3lOcTJFQnAtTDJJLWZOQnNpeFBX0gHKAUFVX3lxTE15azJyUlpfQ0F3TERQWk5aMmo0MXpDblZXb3pOcTBTbGlBZzRJMnI5ZHo1NmhrZU15bm5aVzVqbG1idnJrcDlheFF4dmEydWtjM2QxMkVLRkxhdHdyTG42dVkyMndEUlU5TDBrQmpBRXVMTTVCeWo2VUlDb1Z3VjFjQURMYVBvbzhFSnpnR3dYWlIwMmJ1YmhMSGtleTR0SmZROXZuZzZRWjJac2tMS0VaZ3Rta2FYNi1ubXRCcjlFbTRnYXZPT3Qxb2c?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T03:43:20+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-687bd2d4b0",
-      "title": "Dhanteras boosts vehicle sales in Chandigarh; SUVs, EVs lead | Tap to know more | Inshorts - Inshorts",
-      "summary": "Dhanteras boosts vehicle sales in Chandigarh; SUVs, EVs lead | Tap to know more | Inshorts Inshorts",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "Inshorts",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOSHJHVDYyU1N6aHJ0Mmd3SmczRnVxQ0VNOXJVV09SZC1USkdqdmM4RUZCdWRvcG9FWVZhaVoxOHMtWkdxNG5fdHdTenBERkxTdUVCY2g0UjJtUEVFdW9qUjFFRjRKUUJLZDNoN091bzEteGVPQVRPNnN5ejZRaE5HamlLSlNJaXhCZkNsMmR3OFdGTEJRR0J0U002U2hKamJtUnJuSHFn0gGrAUFVX3lxTE5YVVhMSTY1enJNdG5CTEpIdkd6SVdBVmJnOWdHM2tlVXBMV21naklCYXctSHRqUEpCRXdTbWZ0XzB2WkVma3hOeHNYaW12bERZUEtuMDdSU1BMaDF2YTgwZ2RZRURjZTFDY0E2Z0kxcVo1eVJMRzBjSU1PVjhiVDJueHIzRDVVZkJvR3BkZmpzNXBkWHhwNlpDRk8wS2VSWHlFaXhKZ3AwNGpVMA?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T03:40:52+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-c0a4dfea65",
-      "title": "चंडीगढ़ में अग्निवीरों को भर्ती में 5 साल की छूट: रिजर्व वर्ग को डबल लाभ; पोस्ट खाली रहीं तो पंजाब-हरियाणा क... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ में अग्निवीरों को भर्ती में 5 साल की छूट: रिजर्व वर्ग को डबल लाभ; पोस्ट खाली रहीं तो पंजाब-हरियाणा क... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQ0IxbUFGSkVGWmkxMGhnQk9MQWtqX3UwTEpvU3RjV0tINk5EWlBhQU1aRjVkdzBtX05Gdk5KN0xzSVU1eTNTc3hTbHM4VDVqamxZYmZPRE9OWmtleXdIRGVGWURSc0hESy11TWd3Q0wxamozUFVFODVmNHZOdHRoNkM0SWRsMVZUQzY0S3ZBNW15UkhqcUp0ZWo1bEFpOTVlbXppYzZDYTZOdFNvZGoxeFpJZEVGczdLcGFISm1uNGZDdFJx0gHKAUFVX3lxTE9mR2RpRTVSQ0NQY3NYTUxnTjN0MjQwMUY4bTEwY3RQcjhSZ1QtZUwyWExha1hfcU5GaXdaVEhTUm5vbW0tdmJJc0dvLXZ4aHkwNG9oV0NzWW5ZTnl1UDlpb0NUMTc3RF9IamhtRVdibFpGT3drNEljSTgtcGFXWU1wYk9UdFhPUzBscFhQX3RrZGx2azZBN3ctQTlFbktWSnZqT1FzUXJ3WTZtV1A5bmNqNXlnS0syeWhfdlFqZThiWk9EaWZoSUVjVUE?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T03:28:25+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-13b158cdfd",
-      "title": "अब चंडीगढ़ में एक्स-अग्निवीरों को भी मौका, जेल वार्डर भर्ती नियमों में बदलाव, उम्र में 5 साल तक की छूट - ETV Bharat",
-      "summary": "अब चंडीगढ़ में एक्स-अग्निवीरों को भी मौका, जेल वार्डर भर्ती नियमों में बदलाव, उम्र में 5 साल तक की छूट ETV Bharat",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "ETV Bharat",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOQThZNDZRbGxuang0MnRJNGZiSjFYaFA0VEZvNk15YnZNNXJHRldsUnkzRElZNzhKdU93eE9jR3hpaDVnUkZFN0JadEM5UHhuVFl5MTJHV0JJQWFyV3ZxaTJJNDRVTjdQeE9ybEEzZVJpR3NLX2ViUk9TY1Y4WHJDUVctb2RnZEFwZE5Bdkh3MEI5MUlIRFZZNHJWS1RscTRkS0ZjS3pmakx6cWhuak5jUk56Vmwxbm1maHJoLVBGSWN5aWpOUU4wS1hyTXVkRFBXeXdWUV9RTFVJRXdlOWdwTWI4ONIB6AFBVV95cUxPRDJBMEJwci0xekhXZnFDMFQtXzNxX3h1a20xT3FFZ2FFNEhpNGMtUktSdFNHOVluTHZDaG1rQkpqUWY1TjZVbWpyVU1BeENnYzU2a3dXTDFqSVNUelVxQXJzbXRsWFAwZ3JFMmh4WEtUbmNDaThRN2NBblROX1hDZTJvUjNCeHlSZUtTQ2pRS2hPSHA3MW1DQzBPNGthSmx0UTZoajVIUERfQ1VCNTVLaWVsdFkwb19YcXV6SE1yS2FoanJ3OHp4eHJsTE9EejZIbXAxc2pwS1RWeV90MkhGeGtOa2c3emUz?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T03:09:18+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-a493a22145",
-      "title": "चंडीगढ़ में बाजारों के पास स्कूलों में मिलेगी पार्किंग: 8 नवंबर तक रहेगी सुविधा, पुलिस बोली- गलत तरीके से ख... - Dainik Bhaskar",
-      "summary": "चंडीगढ़ में बाजारों के पास स्कूलों में मिलेगी पार्किंग: 8 नवंबर तक रहेगी सुविधा, पुलिस बोली- गलत तरीके से ख... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "education",
-      "category_label_en": "📚 Education",
-      "category_label_hi": "📚 शिक्षा",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOd3FUbklqS2IyS1F2UFBEQW80T1FVMkNYNHA4YUI0Rk56eXMyNVFiVWZsenpIVFFlRkhZQm5JZjdCSXZYT0ZqWDEzM0JFSkJGU3FUbGdJQTktNVlhODkwQmRqc2RtQXJqOVE1WXFfOElHTU96V3plaTJ0ODJXZ3NNTzlFeGpnd2lmNlNEOVJDc2owZ1NIMmZLZHhqR1M1RHRrVzhUWU1UX1F6ZVJjSm9PZkQ3cknSAboBQVVfeXFMUE5id2JLNFRUSExpeXFjOGpxYmVYUENWcEhQV25PaTdoZEU3UFk2dVpOcTN3R3Btd3gyeU1XRVR1cXVzWjB6V05OYkdKLWlXQmd4dy1TYmlvT3FyYTlVWlR3YUpEeFlMa0ZOZ1NseUNQWjVVajlTc0JnNWtuZHlHS0IteDR6SHRWSllfaUdTQTJ4TWRoVVhfd20zenVGVmZxQTVtaGwtdHVCT1NQWVV0VDMybDJsQ0h4bURn?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T03:01:19+00:00",
-      "importance": "low",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-e0061b5966",
-      "title": "Digital Arrest Fraud Drains Crores From Chandigarhs Senior Citizens - The 420.in",
-      "summary": "Digital Arrest Fraud Drains Crores From Chandigarhs Senior Citizens The 420.in",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_police",
-        "name": "The 420.in",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/ie.png",
-        "color": "#E43131",
-        "article_url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5tMXVOc0p1MWJ5aHhGNDN5QVJGVkxSekt4VnZKRXZoUTdLMGNlQkZzZnBxOVpTQ3pIbmVYYzVnS1E5Z3dwSlZ0Vk5vcHNaNkJOejdfd2lndU0tQ3pDb1FTVktsdFRTR2VCRk1jMEhQaXc?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T02:58:46+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-37e8f684b0",
-      "title": "जीएमसीएच में MD-MS दाखिले पर हाईकोर्ट सख्त: 1966 से चंडीगढ़ में रहने की शर्त अवैध; कहा-नए सिरे से मेरिट सूच... - Dainik Bhaskar",
-      "summary": "जीएमसीएच में MD-MS दाखिले पर हाईकोर्ट सख्त: 1966 से चंडीगढ़ में रहने की शर्त अवैध; कहा-नए सिरे से मेरिट सूच... Dainik Bhaskar",
-      "sector_tag": "HIGH COURT",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPMkxBTU82cGxvbVNUdFg5QlcyazRXYnhUU0djRTFPbkNaNXVRSlRXNlBaeWE5OVpBTV96VXVQYU53X0VHcWNEYUNBcEt2SmI4SUN4STZyYmYzU0dDdFNtWGxiWU5RcjhTdnR1cFVSZzZPXzkwVkNpSG1EbWd2M1BvdmdZTzYwNGVFanNNNGRQRFBZZXN6SUtib1JMWW90RmZhVXFaMl9CcUpDWlpUcGVTQS14a0ZFT0NmbDBtWDE1Z1lMRXRU0gHKAUFVX3lxTE1rNGJMb1NuaU1aYUpSYm5HU0syU25fQnlEd3ZTNzF6c3ZrODJJUmRzZFBVVmlTbWkyX3YzV0xtTF8zbDVZb1ZxREloUXVLRU1tbTFtRW90TXJPY2ctS2FzTV9pUWlza3NBcDNlUEZDQ1BPT2xnem1SNWRramx0SXZoX2lQMlZEQ2N2aFcxR0lMdDVRdnhRTW9wQmFvbDhlZXNUSmhsQkYwTGROT0xPQy1kY3VJZHVOS2E0YmVWb1h5TUdUSFFTc1VOVHc?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T02:55:38+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-15314bce87",
-      "title": "दिवाली पर घर लौटे हिमाचली, HRTC की 134 बसें पहुंचीं: 132 अतिरिक्त बसें कल लौटेंगी, दिल्ली, चंडीगढ़ और बद्दी... - Dainik Bhaskar",
-      "summary": "दिवाली पर घर लौटे हिमाचली, HRTC की 134 बसें पहुंचीं: 132 अतिरिक्त बसें कल लौटेंगी, दिल्ली, चंडीगढ़ और बद्दी... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQWHRxaEZKOTFOVE92UmxxTTVOaGN2YzduZi1Pd2FoSnNCRnBIMWs3dW1BTVJjX0JFSEpNekNESzZ0N25KdENVLW5DN1hHYU5HajhkUGVNY1ltUXVPVmJRelBRanB5YTRDQ1FiZWw3NHczb2RFZjZKU3BpOUxHWTcwdXZLdm1vUF9JWU9sdGdNYy1vT1BBeGVMaHhJS2JWSEpmc09FS25BOTFrb0J0R2RqX1d3bmlrSnRjWWFOcnh0YmVCZ0s4eEh3MNIBzgFBVV95cUxPRGJIQzB1aDFKSFBrYmVsVWlsVXJVa3BabDJOaHJzcmJyaTBySm5aU1JRLU9Zbm1zYV8xZHg3WE5BT1hXYTgxRy1YLXJkZlF4VjlyRDNCb2JSb0dpTGQzOG85ajBEM0U1T0x1VWNUZU44dmNIdHhWZ3JqMm5OOVVvVmQzYzJicUhKVWR1MnJNTjhDa0tFRXZFQ2I0dXQzeHo2RXNabjNHeDVINVJIQVFKZVRqaUU3d3o3NV9KQ3hSNjREOUdZUHA2RDlIYTBsQQ?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T02:37:30+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-00888d0571",
-      "title": "Chandigarh News: पहली पारी में बढ़त के बाद भी हारा चंडीगढ़, पंजाब ने 7 विकेट से दी शिकस्त",
-      "summary": "पहली पारी में बढ़त के बाद भी हारा चंडीगढ़, पंजाब ने 7 विकेट से दी शिकस्त",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/chandigarh-loses-despite-taking-a-first-innings-lead-punjab-secures-a-7-wicket-victory-chandigarh-news-c-16-pkl1079-1168935-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:34:13+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-37f047dbb6",
-      "title": "Chandigarh News: 115 करोड़ खर्च, फिर भी डंपिंग ग्राउंड में 15 हजार टन कचरा; 15 नवंबर की डेडलाइन भी चूकेगा निगम",
-      "summary": "115 करोड़ खर्च, फिर भी डंपिंग ग्राउंड में 15 हजार टन कचरा; 15 नवंबर की डेडलाइन भी चूकेगा निगम",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/115-crore-spent-yet-15000-tonnes-of-waste-remain-at-the-dumping-ground-the-municipal-corporation-is-set-to-miss-the-november-15-deadline-as-well-chandigarh-news-c-16-pkl1079-1169158-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:33:34+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-1818348d12",
-      "title": "'चंडीगढ़ में इंस्पेक्टर ने चालान के बदले 5000 लिए': दुकानदार बोला-रसीद नहीं दी, VIDEO सामने आने पर अधिकारी ... - Dainik Bhaskar",
-      "summary": "'चंडीगढ़ में इंस्पेक्टर ने चालान के बदले 5000 लिए': दुकानदार बोला-रसीद नहीं दी, VIDEO सामने आने पर अधिकारी ... Dainik Bhaskar",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "safety",
-      "category_label_en": "🔐 Safety",
-      "category_label_hi": "🔐 सुरक्षा",
-      "source": {
-        "id": "google_news_chd_hi_wire",
-        "name": "Dainik Bhaskar",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMzdjV2UzWjIxeDBoTXpBaXp1UjdxRzhJRkRKWi1zQnJrY1J0Q0VaZHIxc3ozNXdpc3ZqZjJPbkl2dUN4ZWpNYlhNZnhRMlJraFZEaDhpdkhBUi1wT29sREpBRWwwcDRoMDJ0STRkRjEzWjlYRS0tTGxMaFZMSF9xYXcyZUZkNDFuV2NJVThMSm9zSl9FREt3OVNIdXhFb2E0TGdzd1Jkbk5aeDJuZGttMTZkbUxXUFlQajltV2dlNXR6cEXSAcgBQVVfeXFMTWE5U1pZVkljY1Z0Vk13NHdPSDhYa2RqOWVJbHBJOTRTVkd6REJpTkhLa0FFN29HdnNNZGZtT0tfR0JieGRPRGgwckhNa3hOWVdKaExyUWR6OWRZcVdDU3gycVhIMk1OOHhrWG5mU2tKM1lDRG0yVFBUZTVKNUtkMGJXY3hrQzNlMVBXeTBENUJfZWpBSEJGYVhTT1dtQjFDSVhHV1c5R2thUTNqOHpqOEZ2N195VHZ3VG9VSEF0akdtSzRlN2NWWEM?oc=5",
-        "language": "hi",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T02:32:35+00:00",
-      "importance": "low",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-9b56c97bb4",
-      "title": "Chandigarh News: जीजीडीएसडी और एमसीएम डीएवी कॉलेज ने जीते टेनिस खिताब",
-      "summary": "जीजीडीएसडी और एमसीएम डीएवी कॉलेज ने जीते टेनिस खिताब",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "education",
-      "category_label_en": "📚 Education",
-      "category_label_hi": "📚 शिक्षा",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/ggdsd-and-mcm-dav-college-win-tennis-titles-chandigarh-news-c-16-pkl1079-1168898-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:31:37+05:30",
-      "importance": "low",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-567aebf6ee",
-      "title": "Chandigarh News: प्रशासक ने किया नशा मुक्त औद्योगिक क्षेत्र अभियान का शुभारंभ",
-      "summary": "प्रशासक ने किया नशा मुक्त औद्योगिक क्षेत्र अभियान का शुभारंभ",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Governance",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/administrator-launches-drug-free-industrial-area-campaign-chandigarh-news-c-16-pkl1079-1168938-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:30:43+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-1b5c6b7370",
-      "title": "Chandigarh News: चंडीगढ़ में 13 जगह सजे पटाखा बाजार, 96 लाइसेंस जारी",
-      "summary": "चंडीगढ़ में 13 जगह सजे पटाखा बाजार, 96 लाइसेंस जारी",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/firecracker-markets-set-up-at-13-locations-in-chandigarh-96-licenses-issued-chandigarh-news-c-16-pkl1079-1169252-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:30:11+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-36be8a34d8",
-      "title": "Chandigarh News: गटर के ढ़क्कन चोरी होने वाली खबर के संबंध में कोटस",
-      "summary": "गटर के ढ़क्कन चोरी होने वाली खबर के संबंध में कोटस",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "safety",
-      "category_label_en": "🔐 Safety",
-      "category_label_hi": "🔐 सुरक्षा",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/quotes-regarding-the-news-of-theft-of-sewer-covers-chandigarh-news-c-16-pkl1079-1169492-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:29:18+05:30",
-      "importance": "low",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-7bdfa0f674",
-      "title": "Chandigarh News: दिवाली पर पटाखे जलाते समय बरतें सावधानी, नाकाम पटाखों को दोबारा न जलाएं",
-      "summary": "दिवाली पर पटाखे जलाते समय बरतें सावधानी, नाकाम पटाखों को दोबारा न जलाएं",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/exercise-caution-while-bursting-firecrackers-during-diwali-do-not-attempt-to-relight-any-firecrackers-that-failed-to-go-off-chandigarh-news-c-16-pkl1079-1168994-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:28:48+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-532b3f3a8f",
-      "title": "Chandigarh News: धनतेरस पर सोने की खरीदारी पर 50% तक मेकिंग चार्ज में छूट",
-      "summary": "धनतेरस पर सोने की खरीदारी पर 50% तक मेकिंग चार्ज में छूट",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/up-to-50-discount-on-making-charges-for-gold-purchases-on-dhanteras-chandigarh-news-c-16-pkl1079-1169320-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:28:05+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-ff79a0ca98",
-      "title": "Chandigarh News: ट्राइसिटी में धनतेरस पर 950 करोड़ से ज्यादा की धनवर्षा, जाम ने निकाला दम",
-      "summary": "ट्राइसिटी में धनतेरस पर 950 करोड़ से ज्यादा की धनवर्षा, जाम ने निकाला दम",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "amar_ujala",
-        "name": "Amar Ujala",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/amarujala.png",
-        "color": "#DD0000",
-        "article_url": "https://www.amarujala.com/chandigarh/tricity-sees-a-windfall-of-over-950-crore-on-dhanteras-traffic-jams-cause-major-distress-major-distress-chandigarh-news-c-16-pkl1079-1169383-2026-11-07",
-        "language": "hi",
-        "tier": 2
-      },
-      "published_at": "2026-11-07T02:27:05+05:30",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-dc48ae9b77",
-      "title": "Chandigarh professor files complaint, manager served notice; entry allowed for children aged 5 and above - Bhaskar English",
-      "summary": "Chandigarh professor files complaint, manager served notice; entry allowed for children aged 5 and above Bhaskar English",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "governance",
-      "category_label_en": "🏛️ Civic",
-      "category_label_hi": "🏛️ प्रशासन",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "Bhaskar English",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQWmJGcVJoNUdja3RyMzBDUkRWbk1yMGdPbHJ6eDRpQlFnMVdiZXBkQ1Y1RDNtcDVrYU0wdWpETGgtNmN6NDZ5TU5SWDVmOTJRUjNDTWNvRUFUN1dQYWpFLUZIU3lqeGw3Yjlzb1FETENYSEtrWUVEN04zMDg5dGFwUFV2WnhKMVVSOVk4V25YY1lhanVQTWxoOVNnbzA5b1BfQ2JGeUFvUzl0X0Y1T0JSVmh3eFpLOEU1Y2dEOEZud0Fua1g3aHlldTM4cjZtaGo0b1BOczFMbw?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T02:21:09+00:00",
-      "importance": "medium",
-      "hyperlocal_score": 10
-    },
-    {
-      "id": "chd-577db0f9cc",
-      "title": "Four songs banned at singer Diljits Indore concert: Chandigarh professor files complaint, manager served n... - Bhaskar English",
-      "summary": "Four songs banned at singer Diljits Indore concert: Chandigarh professor files complaint, manager served n... Bhaskar English",
-      "sector_tag": "CHANDIGARH",
-      "category_id": "events",
-      "category_label_en": "🎭 Events",
-      "category_label_hi": "🎭 कार्यक्रम",
-      "source": {
-        "id": "google_news_chd_wire",
-        "name": "Bhaskar English",
-        "logo_url": "https://customonion4321.github.io/city-beautiful-buzz/logos/tribune.png",
-        "color": "#0047AB",
-        "article_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZlg2bENTTzdzdkYxanRQUEdyb0xOTTN0b2xpTTBkdTNyaHAwUTNzVjZNN3ZubW9fM2h0T3FLMG5DTnpfRW1wOWhIRkhwYkF3QjJ0M2YzWWFrYmVxSF9GZS04NjdyY1lYdEs2dEx2OE9MSzBvaWFkOGJzV1lBaktYRE9JR2JqeVdxZ2I3czVFR212NjlzY0g5aEF2X1RtU3JkX2xpdjM4cm00RDc5OG00NHVORF9USndKZ1RhMElkaDY4RFZNVTlB0gHMAUFVX3lxTFBwZHFhV3IxSTlMcl9EX0N6UjI4ZG5LRHpkRVZKLUZ1TGwxMmJuQ2szZk1mcEx6N1dBZTRPODhMa3dwMm1CcmFNcnJsRVNnQ1ZpWGl3Nm9TZlB6YmV5ekxDanlWWnFpM2VjemIwZnJXQnJRRW5hcVpuWGtRb2xiOEQ1NktyLWQ2YmRVV1ZmdHI1TGZKMjBIclB1X1k2czFIUkxNcnNXQ2szMHhwdDNDWnZVNk9WbUJVTmdTWjFLTkg2MmVxTXB6YU1aUmx2bA?oc=5",
-        "language": "en",
-        "tier": 1
-      },
-      "published_at": "2026-11-07T02:21:09+00:00",
-      "importance": "low",
       "hyperlocal_score": 10
     }
   ]
